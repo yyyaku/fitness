@@ -5,15 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
+  <meta name="description" content="Фитнесс центр в Омске">
+  <title>Фитнес 2.0</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans-semi-bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans-bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans-extra-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-normal-300.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-normal-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-normal-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-normal-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-normal-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-normal-800.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -50,70 +54,114 @@
         </p>
       </section>
     </div>
-  </div>
-  <footer class="page-footer">
-    <div class="page-footer__inner container">
-      <a class="logo page-footer__logo" aria-current="page">
-        <span class="visually-hidden">На&nbsp;главную.</span>
-        <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
-      </a>
-      <nav class="page-footer__nav-wrapper">
-        <ul class="nav page-footer__nav">
-          <li>
-            <a class="nav__link" href="#">
-              Услуги
+    <main class="page__main">
+
+      <section class="about container">
+        <div class="about__content">
+          <h2>Тренажерный зал</h2>
+          <p>Просторный зал площадью 900 кв/м</p>
+          <p>
+            Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+            и&nbsp;здоровья. Тренажерный
+            зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p>
+            В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами. Также
+            в&nbsp;фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий.
+          </p>
+        </div>
+        <div class="about__picture">
+          <picture>
+            <source type="image/webp" media="(max-width: 320px)"
+              srcset="img/about-mobile.webp 1x, img/about-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="img/about-tablet.webp 1x, img/about-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/about.webp 1x, img/about@2x.webp 2x">
+            <img src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Каким выглядит один из наших залов."
+              loading="lazy">
+          </picture>
+          <div class="about__video video">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/about-video-mobile.webp, img/about-video-mobile@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/about-video.webp, img/about-video@2x.webp 2x">
+
+              <img src="img/about-video.jpg"
+                srcset="img/about-video.jpg 2x" width="364" height="228"
+                alt="Обложка видео-обзора тренажерного зала.">
+            </picture>
+            <button type="button" aria-label="Воспроизвести видео."></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__inner container">
+        <a class="logo page-footer__logo" aria-current="page">
+          <span class="visually-hidden">На&nbsp;главную.</span>
+          <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
+        </a>
+        <nav class="page-footer__nav-wrapper">
+          <ul class="nav page-footer__nav">
+            <li>
+              <a class="nav__link" href="#">
+                Услуги
+              </a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">
+                Абонементы
+              </a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">
+                Акции
+              </a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">
+                Тренеры
+              </a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">
+                Расписание
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="socials page-footer__socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <span class="visually-hidden">Мы&nbsp;в&nbsp;Вконтакте.</span>
+              <svg class="socials__icon" width="14" height="14">
+                <use href="img/sprite.svg#vk"></use>
+              </svg>
             </a>
           </li>
-          <li>
-            <a class="nav__link" href="#">
-              Абонементы
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <span class="visually-hidden">Мы&nbsp;в&nbsp;Одноклассниках.</span>
+              <svg class="socials__icon" width="20" height="14">
+                <use href="img/sprite.svg#ok"></use>
+              </svg>
             </a>
           </li>
-          <li>
-            <a class="nav__link" href="#">
-              Акции
-            </a>
-          </li>
-          <li>
-            <a class="nav__link" href="#">
-              Тренеры
-            </a>
-          </li>
-          <li>
-            <a class="nav__link" href="#">
-              Расписание
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <span class="visually-hidden">Мы&nbsp;в&nbsp;Reddit.</span>
+              <svg class="socials__icon" width="20" height="14">
+                <use href="img/sprite.svg#reddit"></use>
+              </svg>
             </a>
           </li>
         </ul>
-      </nav>
-      <ul class="socials page-footer__socials">
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span class="visually-hidden">Мы&nbsp;в&nbsp;Вконтакте.</span>
-            <svg class="socials__icon" width="14" height="14">
-              <use href="img/sprite.svg#vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span class="visually-hidden">Мы&nbsp;в&nbsp;Одноклассниках.</span>
-            <svg class="socials__icon" width="20" height="14">
-              <use href="img/sprite.svg#ok"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span class="visually-hidden">Мы&nbsp;в&nbsp;Reddit.</span>
-            <svg class="socials__icon" width="20" height="14">
-              <use href="img/sprite.svg#reddit"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

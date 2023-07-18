@@ -28,7 +28,7 @@
 .teaser__label,
 .teaser__heading {
   font-weight: 600;
-  font-family: "Alumni Sans";
+  font-family: $ff-alumni-sans;
 }
 
 .teaser__label {
@@ -86,7 +86,6 @@
   align-self: center;
   margin: 0;
   padding: 117px 0 0;
-  font-family: "Roboto Condensed";
   font-weight: 400;
   line-height: 21px;
   list-style: none;
