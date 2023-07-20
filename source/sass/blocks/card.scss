@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 68px 78px;
+  background-color: #ffffff;
+  border: 7px solid #ffffff;
+  text-align: center;
+
+  @include vp-1199 {
+    padding: 68px 118px;
+  }
+
+  @include vp-767 {
+    padding: 55px 42px;
+  }
+
+  &:hover {
+    border: 7px solid;
+    border-image: $button-buy-gradient;
+    border-image-slice: 7;
+  }
+
+  &:hover a {
+    color: #ffffff;
+    background: $button-buy-gradient-hover;
+  }
+}
+
+.card h3 {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 110.2%;
+
+  @include vp-767 {
+    font-size: 22px;
+  }
+}
+
+.card p {
+  margin: 0;
+  margin-bottom: 96px;
+}
+
+.card__price {
+  color: #103aae;
+  margin-bottom: 59px;
+}
+
+.card__price p {
+  position: relative;
+  margin: 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  z-index: 1;
+
+  @include vp-767 {
+    line-height: 72px;
+  }
+
+  &::before {
+    content: attr(data-parent);
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    color: #e8e8e8;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150px;
+    z-index: -1;
+
+    @include vp-1199 {
+      right: 35px;
+    }
+  }
+}
+
+.card__price span {
+  margin: 0;
+  margin-left: 14px;
+  color: #102654;
+  font-weight: 400;
+}
+
+.card__btn {
+  color: #102654;
+  padding: 27px 44px;
+  border: 2px solid;
+}

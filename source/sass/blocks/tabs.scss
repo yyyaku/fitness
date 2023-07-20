@@ -1,89 +1,94 @@
 .tabs {
-  max-width: 100%;
+  position: relative;
+  background: #f8f9fc;
+}
+
+.tabs__wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 120px 0 120px 0;
+}
+
+.tabs__wrapper h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.62px;
+  line-height: 65px;
+  text-align: center;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .tabs__controls {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 40px;
-
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-  }
-}
-
-.tabs__control {
-  text-transform: uppercase;
-  cursor: pointer;
-  margin: 0 20px;
-  opacity: 0.5;
-  min-width: auto;
   justify-content: center;
-  width: 25%;
+  margin: 0 auto 39px auto;
+  width: max-content;
 
-  @media screen and (max-width: 1023px) {
-    margin: 0 10px;
-    padding: 15px;
+  @include vp-1199 {
+    margin-bottom: 45px;
   }
 
-  @media screen and (max-width: 767px) {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
+  @include vp-767 {
+    margin-bottom: 35px;
   }
 
-  &.is-active {
-    opacity: 1;
-    pointer-events: none;
-  }
-}
-
-.tabs__content {
-  margin-bottom: 40px;
-
-  transition: height 0.3s;
-}
-
-.tabs__element {
-  padding: 25px;
-  width: 100%;
-
-  @media screen and (max-width: 767px) {
-    padding: 15px;
-  }
-
-  p {
-    margin: 0;
-
-    &:not(:last-child) {
-      margin: 0 0 20px 0;
-    }
-  }
-
-  &:nth-child(1) {
-    background-color: rgb(250, 235, 215);
-  }
-
-  &:nth-child(2) {
-    background-color: rgb(229, 250, 215);
-  }
-
-  &:nth-child(3) {
-    background-color: rgb(180, 188, 233);
-  }
-
-  &:nth-child(4) {
-    background-color: rgb(255, 187, 204);
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: calc(100% - 40px);
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.2);
   }
 }
 
-.tabs--unset .tabs__content {
-  height: 100px;
+.tabs__controls button {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  border: 0;
+  color: rgba(16, 38, 84, 0.5);
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  cursor: pointer;
+
+  @include vp-767 {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 70%;
+    height: 2px;
+    background-color: #d10a42;
+    transform: scale(0);
+    transform-origin: center;
+  }
 }
 
-.tabs--unset .tabs__element {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+.tabs__controls button.is-active {
+  color: #102654;
+
+  &::before {
+    transform: scale(1);
+  }
 }
