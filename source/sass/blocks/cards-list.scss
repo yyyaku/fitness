@@ -1,0 +1,19 @@
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(310px, 360px));
+  gap: 40px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+
+  @include vp-1199 {
+    grid-template-columns: 100%;
+    padding: 0 118px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
