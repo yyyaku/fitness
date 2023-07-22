@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initVideoPlayer} from './modules/init-video-player';
 import {initTabs} from './modules/tabs/init-tabs';
+import {initSliderCoaches} from './modules/init-slider-coaches';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initVideoPlayer();
     initTabs();
+    initSliderCoaches();
   });
 });
 
