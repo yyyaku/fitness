@@ -148,6 +148,10 @@
     font-size: 10px;
     letter-spacing: 0.5px;
   }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .event__image img {
