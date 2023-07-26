@@ -1,0 +1,33 @@
+.input-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: 0;
+}
+
+.input-text__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 410px;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1199 {
+    max-width: 472px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.input-text__input {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+}
