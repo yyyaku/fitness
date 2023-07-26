@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initVideoPlayer} from './modules/init-video-player';
 import {initTabs} from './modules/tabs/init-tabs';
+import {initAccordions} from './modules/accordions/init-accordion';
 import {initSliderCoaches} from './modules/init-slider-coaches';
 import {initSliderReviews} from './modules/init-slider-reviews';
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSliderCoaches();
     initSliderReviews();
+    initAccordions();
   });
 });
 
