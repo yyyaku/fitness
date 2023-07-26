@@ -1158,42 +1158,42 @@ button.swiper-pagination-bullet {
   font-weight: 300;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("./../fonts/robotocondensed-normal-300.woff2") format("woff2");
+  src: url("./../fonts/RobotoCondensed-300.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("./../fonts/robotocondensed-normal-400.woff2") format("woff2");
+  src: url("./../fonts/RobotoCondensed-400.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("./../fonts/robotocondensed-normal-700.woff2") format("woff2");
+  src: url("./../fonts/RobotoCondensed-700.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 600;
   font-family: "Alumni Sans";
   font-display: swap;
-  src: url("./../fonts/alumnisans-normal-600.woff2") format("woff2");
+  src: url("./../fonts/AlumniSans-600.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "Alumni Sans";
   font-display: swap;
-  src: url("./../fonts/alumnisans-normal-700.woff2") format("woff2");
+  src: url("./../fonts/AlumniSans-700.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 800;
   font-family: "Alumni Sans";
   font-display: swap;
-  src: url("./../fonts/alumnisans-normal-800.woff2") format("woff2");
+  src: url("./../fonts/AlumniSans-800.woff2") format("woff2");
 }
 *,
 *::before,
@@ -3058,33 +3058,6 @@ button,
   overflow: hidden;
 }
 
-.accordion {
-  margin: 0 auto 50px auto;
-}
-.accordion .accordion {
-  width: 90%;
-  margin: 0 auto;
-}
-.accordion__element:last-child {
-  margin-bottom: 0;
-}
-.accordion__element {
-  margin-bottom: 34px;
-  padding: 10px;
-}
-.accordion__element.is-active > .accordion__button {
-  opacity: 0.5;
-}
-.accordion__button {
-  width: 100%;
-  padding: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.accordion__wrapper {
-  padding: 10px;
-}
-
 .accordion__element {
   display: -ms-grid;
   display: grid;
@@ -3227,6 +3200,7 @@ button,
 
 .form h3 {
   margin: 0;
+  font-family: "Alumni Sans", "Arial", "sans-serif";
   font-size: 54px;
   font-weight: 800;
   line-height: 84.24px;
