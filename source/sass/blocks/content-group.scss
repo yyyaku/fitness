@@ -1,0 +1,9 @@
+.content-group__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #102654;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+}
