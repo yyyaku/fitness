@@ -3046,9 +3046,6 @@ button,
   .event {
     -ms-grid-columns: 292px 386px;
     grid-template-columns: 292px 386px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .event__content {
