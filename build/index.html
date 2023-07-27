@@ -44,13 +44,13 @@
         <a class="btn teaser__btn" href="#subscriptions">Купить&nbsp;абонемент</a>
         <div class="teaser__image">
           <picture>
-            <source type="image/webp" media="(max-width: 320px)"
-              srcset="img/teaser-tablet.webp 1x, img/teaser-tablet@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1199px)"
-              srcset="img/teaser-tablet.webp 1x, img/teaser-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/teaser.webp 1x, img/teaser@2x.webp 2x">
-            <img src="img/teaser.jpg" srcset="img/teaser@2x.jpg 2x" alt="Каким Вы можете стать благодаря нам."
-              loading="lazy">
+              srcset="./img/teaser-tablet.webp, ./img/teaser-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/teaser.webp, ./img/teaser@2x.webp 2x">
+
+            <source media="(max-width: 1199px)" srcset="./img/teaser-tablet.jpg, ./img/teaser-tablet@2x.jpg 2x">
+            <img src="./img/teaser.jpg" srcset="./img/teaser@2x.jpg 2x" width="500" height="556"
+              alt="Тренер в футболке супермена.">
           </picture>
         </div>
       </section>
@@ -75,21 +75,25 @@
         </div>
         <div class="about__picture">
           <picture>
-            <source type="image/webp" media="(max-width: 320px)"
-              srcset="img/about-mobile.webp 1x, img/about-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="./img/about-mobile.webp, ./img/about-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1199px)"
-              srcset="img/about-tablet.webp 1x, img/about-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/about.webp 1x, img/about@2x.webp 2x">
-            <img src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Каким выглядит один из наших залов."
-              loading="lazy">
+              srcset="./img/about-tablet.webp, ./img/about-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/about.webp, ./img/about@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="./img/about-mobile.jpg, ./img/about-mobile@2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="./img/about-tablet.jpg, ./img/about-tablet@2x.jpg 2x">
+            <img src="./img/about.jpg" srcset="./img/about@2x.jpg 2x" width="660" height="401"
+              alt="Светлый зал со спортивным оборудованием.">
           </picture>
           <div class="about__video video">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/about-video-mobile.webp, img/about-video-mobile@2x.webp 2x">
-              <source type="image/webp" srcset="img/about-video.webp, img/about-video@2x.webp 2x">
-
-              <img src="img/about-video.jpg" srcset="img/about-video.jpg 2x" width="364" height="228"
+                srcset="./img/about-video-mobile.webp, ./img/about-video-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="./img/about-video.webp, ./img/about-video@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="./img/about-video-mobile.jpg, ./img/about-video-mobile@2x.jpg 2x">
+              <img src="./img/about-video.jpg" srcset="./img/about-video@2x.jpg 2x" width="364" height="228"
                 alt="Обложка видео-обзора тренажерного зала.">
             </picture>
             <button type="button" aria-label="Воспроизвести видео."></button>
@@ -190,6 +194,19 @@
 
           </div>
         </div>
+
+        <!-- Блины справа
+        <div class="tabs__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="./img/weight-tablet.webp, ./img/weight-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/weight.webp, ./img/weight@2x.webp 2x">
+
+            <source media="(max-width: 1199px)" srcset="./img/weight-tablet.png, ./img/weight-tablet@2x.png 2x">
+            <img src="./img/weight.png" srcset="./img/weight@2x.png 2x" width="470" height="494"
+              alt="Спортивные блины розового цвета.">
+          </picture>
+        </div> -->
       </section>
 
       <section class="event page__event container">
@@ -213,9 +230,16 @@
         </div>
         <p class="event__picture">
           <picture>
-            <source type="image/webp" srcset="img/supergames.webp, img/supergames@2x.webp 2x">
-            <img src="img/supergames.jpg" srcset="img/supergames.jpg 2x" width="660" height="550"
-              alt="Обложка видео-обзора тренажерного зала.">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="./img/event-mobile.webp, ./img/event-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="./img/event-tablet.webp, ./img/event-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/event.webp, ./img/event@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="./img/event-mobile.jpg, ./img/event-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="./img/event-tablet.jpg, ./img/event-tablet@2x.jpg 2x">
+            <img src="./img/event.jpg" srcset="./img/event@2x.jpg 2x" width="660" height="500"
+              alt="Спортсмен бьет рукой по полу с магнезией, которая разлетается в разные стороны.">
           </picture>
         </p>
       </section>
@@ -230,12 +254,54 @@
               <li class="coaches__item swiper-slide">
                 <h3>Анна Павлова</h3>
                 <picture>
-                  <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
-                  <img src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294"
-                    alt="Фото Анны Павловой. Девушка с длинными темными волосами в бордовом худи.">
+                  <source type="image/webp"
+                    srcset="./img/coaches-anna-pavlova.webp, ./img/coaches-anna-pavlova@2x.webp 2x">
+
+                  <img src="./img/coaches-anna-pavlova.jpg" srcset="./img/coaches-anna-pavlova@2x.jpg 2x" width="260"
+                    height="294" alt="Фото Анны Павловой. Девушка с длинными темными волосами в бордовом худи.">
                 </picture>
                 <div class="coaches__item-overlay">
                   <h4>Анна Павлова</h4>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 5 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="coaches__item swiper-slide">
+                <h3>Алексей Лавров</h3>
+                <picture>
+                  <source type="image/webp"
+                    srcset="./img/coaches-alexey-lavrov.webp, ./img/coaches-alexey-lavrov@2x.webp 2x">
+
+                  <img src="./img/coaches-alexey-lavrov.jpg" srcset="./img/coaches-alexey-lavrov@2x.jpg 2x" width="260"
+                    height="294"
+                    alt="Фото Алексея Лаврова. Молодой человек с темными волосами и короткой стрижкой, в черном джемпере.">
+                </picture>
+                <div class="coaches__item-overlay">
+                  <h4>Алексей Лавров</h4>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 4 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="coaches__item swiper-slide">
+                <h3>Александр Пашков</h3>
+                <picture>
+                  <source type="image/webp"
+                    srcset="./img/coaches-alexander-pashkov.webp, ./img/coaches-alexander-pashkov@2x.webp 2x">
+
+                  <img src="./img/coaches-alexander-pashkov.jpg" srcset="./img/coaches-alexander-pashkov@2x.jpg 2x"
+                    width="260" height="294"
+                    alt="Фото Александра Пашкова. Молодой человек с темными волосами и короткой стрижкой, в черной майке и очках.">
+                </picture>
+                <div class="coaches__item-overlay">
+                  <h4>Александр Пашков</h4>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
@@ -245,53 +311,22 @@
                 </div>
               </li>
               <li class="coaches__item swiper-slide">
-                <h3>Анна Павлова</h3>
+                <h3>Мария Кетова</h3>
                 <picture>
-                  <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
-                  <img src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294"
-                    alt="Фото Анны Павловой. Девушка с длинными темными волосами в бордовом худи.">
+                  <source type="image/webp"
+                    srcset="./img/coaches-maria-ketova.webp, ./img/coaches-maria-ketova@2x.webp 2x">
+
+                  <img src="./img/coaches-maria-ketova.jpg"
+                    srcset="./img/coaches-maria-ketova@2x.jpg 2x" width="260" height="294"
+                    alt="Фото Марии Кетовой. Девушка с длинными темными волосами в темно-зеленом худи с надписью.">
                 </picture>
                 <div class="coaches__item-overlay">
-                  <h4>Анна Павлова</h4>
+                  <h4>Мария Кетова</h4>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
                     <li>Победитель чемпионата России по CrossFit</li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="coaches__item swiper-slide">
-                <h3>Анна Павлова</h3>
-                <picture>
-                  <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
-                  <img src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294"
-                    alt="Фото Анны Павловой. Девушка с длинными темными волосами в бордовом худи.">
-                </picture>
-                <div class="coaches__item-overlay">
-                  <h4>Анна Павлова</h4>
-                  <p>CrossFit</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по CrossFit</li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="coaches__item swiper-slide">
-                <h3>Анна Павлова</h3>
-                <picture>
-                  <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
-                  <img src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294"
-                    alt="Фото Анны Павловой. Девушка с длинными темными волосами в бордовом худи.">
-                </picture>
-                <div class="coaches__item-overlay">
-                  <h4>Анна Павлова</h4>
-                  <p>CrossFit</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по CrossFit</li>
-                    <li>Опыт — 6 лет</li>
+                    <li>Опыт — 2 лет</li>
                   </ul>
                 </div>
               </li>
@@ -376,10 +411,19 @@
               <div class="promo__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/promo-mobile.webp, img/promo-mobile@2x.webp 2x">
-                  <source type="image/promo.webp" srcset="img/promo.webp, img/promo@2x.webp 2x">
-                  <img src="img/promo.jpg" srcset="img/promo.jpg 2x" width="280" height="462"
-                    alt="Девушка в синей спортивной одежде.">
+                    srcset="./img/promo-mobile.webp, ./img/promo-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/promo-tablet.webp, ./img/promo-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/promo.webp, ./img/promo@2x.webp 2x">
+
+                  <source media="(max-width: 767px)"
+                    srcset="./img/promo-mobile.jpg, ./img/promo-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/promo-tablet.jpg, ./img/promo-tablet@2x.jpg 2x">
+                  <img src="./img/promo.jpg"
+                    srcset="./img/promo@2x.jpg 2x" width="280" height="462"
+                    alt="Подтянутая девушка в спортивном синем костюме. Нижний ракурс.">
                 </picture>
               </div>
             </li>
@@ -503,25 +547,19 @@
                 <li class="reviews__item swiper-slide">
                   <div class="reviews__image-wrapper">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="./img/avatar-mobile.webp, ./img/avatar-mobile@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/avatar.webp, ./img/avatar@2x.webp 2x">
+
+                      <source media="(max-width: 767px)"
+                        srcset="./img/avatar-mobile.jpg, ./img/avatar-mobile@2x.jpg 2x">
                       <img src="./img/avatar.jpg"
                         srcset="./img/avatar@2x.jpg 2x" width="80" height="80"
-                        alt="Фото Ольги Семеновой.">
+                        alt="Фото Анны Орловой.">
                     </picture>
                   </div>
                   <cite>Анна Орлова</cite>
-                  <blockquote>Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто,
-                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
-                    очередей</blockquote>
-                </li>
-                <li class="reviews__item swiper-slide">
-                  <div class="reviews__image-wrapper">
-                    <picture>
-                      <img src="./img/avatar.jpg"
-                        srcset="./img/avatar@2x.jpg 2x" width="80" height="80"
-                        alt="Фото Ольги Семеновой.">
-                    </picture>
-                  </div>
-                  <cite>Ольга Семенова</cite>
                   <blockquote>Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто,
                     тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
                     очередей</blockquote>

@@ -2226,6 +2226,9 @@ button,
   .event {
     -ms-grid-columns: 292px 386px;
     grid-template-columns: 292px 386px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 767px) {
@@ -2240,7 +2243,7 @@ button,
   display: grid;
   -ms-grid-columns: 200px 1fr;
   grid-template-columns: 200px 1fr;
-  gap: 9px 50px;
+  gap: 10px 50px;
   -ms-grid-row-align: start;
       align-self: start;
   padding: 80px 78px 87px;
@@ -2251,13 +2254,12 @@ button,
   .event__content {
     -ms-grid-columns: 117px 1fr;
     grid-template-columns: 117px 1fr;
-    gap: 1px 29px;
     padding: 45px 44px 50px;
   }
 }
 
 .event__content h2 {
-  margin: 5px 0 0;
+  margin: 0;
   font-weight: 600;
   font-size: 82px;
   line-height: 0.96;
