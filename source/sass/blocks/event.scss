@@ -1,6 +1,7 @@
 .event {
   display: grid;
   grid-template-columns: 500px 1fr;
+  align-items: center;
 
   @include vp-1199 {
     grid-template-columns: 292px 386px;
@@ -15,14 +16,15 @@
 .event__content {
   display: grid;
   grid-template-columns: 200px 1fr;
-  gap: 10px 50px;
+  gap: 30px 50px;
   align-self: start;
-  padding: 80px 78px 87px;
+  padding: 85px 78px 87px;
   color: $color-default-white;
   background-color: #ed0233;
 
   @include vp-1199 {
     grid-template-columns: 117px 1fr;
+    gap: 15px 30px;
     padding: 45px 44px 50px;
   }
 }
