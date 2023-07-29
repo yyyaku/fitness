@@ -1991,9 +1991,6 @@ button,
   display: grid;
   -ms-grid-columns: 500px 1fr;
   grid-template-columns: 500px 1fr;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .event__content {
@@ -3165,9 +3162,6 @@ button,
   .event {
     -ms-grid-columns: 292px 386px;
     grid-template-columns: 292px 386px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .event__content {
