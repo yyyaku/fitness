@@ -39,19 +39,6 @@
   @include vp-1199 {
     width: 52px;
     height: 52px;
-
-    &::before {
-      top: 37%;
-      left: 42%;
-      width: 12px;
-      height: 12px;
-      background-image: url("./../img/svg/triangle-tablet.svg");
-    }
-
-    &::after {
-      width: 73px;
-      height: 73px;
-    }
   }
 
   @include vp-767 {

@@ -1,7 +1,29 @@
+.coaches__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 120px 0;
+  width: 1160px;
+}
+
+.coaches__item {
+  position: relative;
+  height: 10px;
+  color: $color-default-white;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.coaches__wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 // .coaches__wrapper {
 //   position: relative;
 //   margin: 0 auto;
 //   padding: 120px 0;
+//   width: 1160px;
 
 //   @include vp-1199 {
 //     padding: 50px 0 100px 0;
@@ -41,21 +63,24 @@
 //   list-style-type: none;
 // }
 
-// .coaches__swiper {
-//   @include vp-1199 {
-//     margin: 0 56px;
-//   }
-
-//   @include vp-767 {
-//     margin: 0 32px;
-//   }
-// }
-
 // .coaches__item {
 //   position: relative;
 //   color: $color-default-white;
 //   background-color: #000000;
 //   overflow: hidden;
+//   aspect-ratio: 260/294;
+
+//   @include vp-1199 {
+//     min-width: 268px;
+//     min-height: 294px;
+//     aspect-ratio: 268/294;
+//   }
+
+//   @include vp-767 {
+//     min-width: 226px;
+//     min-height: 274px;
+//     aspect-ratio: 226/274;
+//   }
 // }
 
 // .coaches__item h3 {
