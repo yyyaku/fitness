@@ -15,15 +15,29 @@
     padding: 55px 42px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 7px solid;
     border-image: $button-buy-gradient;
     border-image-slice: 7;
   }
 
-  &:hover a {
+  &:hover a,
+  &:focus a {
     color: #ffffff;
     background: $button-buy-gradient-hover;
+  }
+
+  &:active a {
+    background: $button-buy-gradient-hover;
+    color: rgb(255, 255, 255, 0.7);
+    border: 2px solid transparent;
+  }
+
+  &:disabled a {
+    background: #ffffff;
+    color: rgb(16, 38, 84, 0.3);
+    border: 2px solid rgb(16, 38, 84, 0.3);
   }
 }
 

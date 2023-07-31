@@ -101,7 +101,23 @@
 .teaser__btn {
   grid-area: btn;
   margin: 0 0 45px 16px;
-  outline: 2px solid;
+  border: 2px solid #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #103aae;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #ffffff;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 
   @include vp-1199 {
     margin-bottom: 25px;

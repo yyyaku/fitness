@@ -7,7 +7,7 @@
   grid-template-columns: 25px 25px 25px;
 }
 
-.socials__item {
+.socials__link {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -17,25 +17,28 @@
   flex-wrap: wrap;
   align-items: center;
 
-  &:hover {
-    background-color: #669ec0;
+  &:hover,
+  &:focus {
+    background-color: #103aae;
+
+    svg {
+      color: #ffffff;
+    }
   }
 
   &:active {
-    background-color: #5496bd;
+    background-color: #102654;
+
+    svg {
+      color: #ffffff;
+    }
   }
-}
 
-.socials__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &:disabled {
+    background-color: rgb(255, 255, 255, 0.3);
 
-.social__icon {
-  fill: #ffffff;
-}
-
-.social__item:active .social__icon {
-  fill: #87b5d1;
+    svg {
+      color: #000000;
+    }
+  }
 }

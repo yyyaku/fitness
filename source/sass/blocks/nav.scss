@@ -14,6 +14,10 @@
   }
 }
 
+.nav li {
+  position: relative;
+}
+
 .nav__link {
   font-size: 14px;
   line-height: 16px;
@@ -22,5 +26,39 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 19px;
+  }
+
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff;
+    }
+  }
+
+  &:focus {
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    margin: -6px -11px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:active {
+    padding: 5px 10px;
+    margin: -5px -10px;
+    color: #ffffff;
+    border: none;
+  }
+
+  &:disabled {
+    padding: 0;
+    color: rgb(255, 255, 255, 0.4);
+    border: none;
   }
 }

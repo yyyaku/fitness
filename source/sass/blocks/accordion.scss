@@ -4,12 +4,13 @@
   grid-template-columns: 1fr auto;
   padding: 25px 0;
   color: #102654;
+}
 
+.accordion__button {
   &::before {
     content: "";
     position: absolute;
     top: 25px;
-    right: 0;
     display: block;
     width: 42px;
     height: 42px;
@@ -18,9 +19,28 @@
     border-radius: 50%;
     cursor: pointer;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: #102654;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #102654;
+    }
+  }
+
+  &:disabled {
+    &::before {
+      background-color: transparent;
+    }
+  }
 }
 
-.accordion__button {
+.accordion__button button {
   position: relative;
   grid-column: 2/3;
   grid-row: 1/2;
@@ -50,6 +70,59 @@
 
   &::after {
     transform: rotate(180deg);
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+
+  &:focus {
+    &::after,
+    &::before {
+      outline: none;
+    }
+  }
+
+  &:focus-visible {
+    background-color: #ffffff;
+  }
+
+  &:active {
+    &::after {
+      background-color: #ffffff;
+    }
+
+    &::before {
+      background-color: #102654;
+    }
+  }
+
+  &:disabled {
+    &::after,
+    &::before {
+      background-color: rgb(16, 38, 84, 0.3);
+    }
+  }
+}
+
+.accordion__element.is-active {
+  .accordion__button {
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+
+  button {
+    &::after {
+      background-color: #102654;
+    }
+
+    &::before {
+      background-color: #ffffff;
+    }
   }
 }
 

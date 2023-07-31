@@ -15,10 +15,11 @@
     position: absolute;
     top: 39%;
     left: 45%;
-    width: 17px;
-    height: 17px;
-    background-image: url("./../img/svg/triangle.svg");
-    background-repeat: no-repeat;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 16px solid #ffffff;
+    border-bottom: 8px solid transparent;
   }
 
   &::after {
@@ -38,24 +39,54 @@
   @include vp-1199 {
     width: 52px;
     height: 52px;
-
-    &::before {
-      top: 37%;
-      left: 42%;
-      width: 12px;
-      height: 12px;
-      background-image: url("./../img/svg/triangle-tablet.svg");
-    }
-
-    &::after {
-      width: 73px;
-      height: 73px;
-    }
   }
 
   @include vp-767 {
     &::before {
       left: 46%;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background: #ffffff;
+
+    &::before {
+      border-top: 8px solid transparent;
+      border-left: 16px solid #000000;
+      border-bottom: 8px solid transparent;
+    }
+
+    &::after {
+      background: #000000;
+    }
+  }
+
+  &:active {
+    background: #ffffff;
+
+    &::before {
+      border-top: 8px solid transparent;
+      border-left: 16px solid #000000;
+      border-bottom: 8px solid transparent;
+    }
+
+    &::after {
+      background: #000000;
+    }
+  }
+
+  &:disabled {
+    background: #ffffff;
+
+    &::before {
+      border-top: 8px solid transparent;
+      border-left: 16px solid rgb(0, 0, 0, 0.4);
+      border-bottom: 8px solid transparent;
+    }
+
+    &::after {
+      background: rgb(0, 0, 0, 0.4);
     }
   }
 }
