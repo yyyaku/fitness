@@ -97,4 +97,8 @@
   position: absolute;
   bottom: -150px;
   right: -183px;
+
+  @include vp-767 {
+    display: none;
+  }
 }

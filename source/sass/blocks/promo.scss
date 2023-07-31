@@ -87,8 +87,11 @@
 .promo__text .promo__link {
   position: relative;
   display: block;
-  margin-top: auto;
+  align-self: flex-start;
+  padding: 10px;
+  margin: auto 0 -10px -10px;
   color: #ffffff;
+  border: 1px solid transparent;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -98,9 +101,25 @@
     content: " ";
     position: absolute;
     bottom: 0;
-    width: 35%;
+    width: 80%;
     height: 1px;
     background-color: #ffffff;
+  }
+
+  &:hover {
+    color: rgb(255, 255, 255, 0.8);
+
+    &::before {
+      background-color: rgb(255, 255, 255, 0.8);
+    }
+  }
+
+  &:focus {
+    border: 1px solid #ffffff;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -156,14 +175,50 @@
 .promo__secondary .promo__link {
   position: relative;
   display: block;
-  margin-top: auto;
+  align-self: flex-start;
+  padding: 10px;
+  margin: auto 0 -10px -10px;
+  border: 1px solid transparent;
 
   &::before {
     position: absolute;
     content: "";
     bottom: 0;
-    width: 15%;
+    width: 80%;
     height: 1px;
     background-color: #1c3374;
+  }
+
+  &:hover {
+    color: rgb(16, 38, 84, 0.7);
+
+    &::before {
+      background-color: rgb(16, 38, 84, 0.7);
+    }
+  }
+
+  &:focus {
+    border: 1px solid #102654;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:active {
+    color: #102654;
+    border: 1px solid transparent;
+
+    &::before {
+      background-color: #102654;
+    }
+  }
+
+  &:disabled {
+    color: rgb(16, 38, 84, 0.3);
+
+    &::before {
+      background-color: rgb(16, 38, 84, 0.3);
+    }
   }
 }

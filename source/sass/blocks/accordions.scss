@@ -66,9 +66,34 @@
   }
 
   @include vp-767 {
-    flex-basis: 141px;
+    flex-basis: 48.62%;
     padding: 14px 0;
+    font-size: 16px;
+    line-height: 16px;
   }
+
+  &:hover,
+  &:focus {
+    border: 1px solid #102654;
+  }
+
+  &:active {
+    color: #ffffff;
+    background: $button-buy-gradient-hover;
+    border: transparent;
+  }
+
+  &:disabled {
+    color: #c8c9cc;
+    background: #ffffff;
+    border: 1px solid #c8c9cc;
+  }
+}
+
+.accordions__controls button.is-active {
+  color: #ffffff;
+  background: $button-buy-gradient-hover;
+  border: transparent;
 }
 
 .accordions__list {
