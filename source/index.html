@@ -121,18 +121,18 @@
                 <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
               </li>
               <li class="cards-list__item card">
-                <h3>С тренером</h3>
-                <p>12 занятий</p>
+                <h3>Дневной</h3>
+                <p>с 8:00 до 17:00</p>
                 <div class="card__price">
-                  <p data-parent="5000">5000<span>₽</span></p>
+                  <p data-parent="1700">1700<span>₽</span></p>
                 </div>
                 <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
               </li>
               <li class="cards-list__item card">
-                <h3>С тренером</h3>
-                <p>12 занятий</p>
+                <h3>Полный день</h3>
+                <p>с 8:00 до 22:00</p>
                 <div class="card__price">
-                  <p data-parent="5000">5000<span>₽</span></p>
+                  <p data-parent="2700">2700<span>₽</span></p>
                 </div>
                 <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
               </li>
@@ -244,37 +244,111 @@
         </div>
       </section>
 
-      <section class="coaches">
-        <div class="container">
-          <div class="coaches__wrapper">
-            <h2>Тренеры</h2>
+      <section class="coaches" id="coaches">
+        <h2>Тренеры</h2>
+        <div class="coaches__wrapper">
+          <!-- <button class="coaches__button coaches__button--prev" type="button" aria-label="Назад."></button> -->
+          <div class="coaches__swiper swiper">
+            <ul class="coaches__list swiper-wrapper">
+              <li class="coaches__item swiper-slide">
+                <h3>Анна Павлова</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/coaches-anna-pavlova-tablet.webp, ./img/coaches-anna-pavlova-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/coaches-anna-pavlova.webp, ./img/coaches-anna-pavlova@2x.webp 2x">
 
-            <button class="coaches__button coaches__button--prev" type="button" aria-label="Назад."></button>
-            <div class="coaches__swiper swiper">
-              <ul class="coaches__list swiper-wrapper">
-                <li class="coaches__item swiper-slide">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/coaches-anna-pavlova-tablet.jpg, ./img/coaches-anna-pavlova-tablet@2x.jpg 2x">
+                  <img src="./img/coaches-anna-pavlova.jpg" srcset="./img/coaches-anna-pavlova@2x.jpg 2x" width="260"
+                    height="294" alt="Фото Анны Павловой. Девушка с длинными темными волосами в бордовом худи.">
+                </picture>
+                <div class="coaches__item-overlay">
+                  <h4>Анна Павлова</h4>
+                  <p>Stretching</p>
+                  <ul>
+                    <li>Дипломированный специалист РГУФКСМиТ</li>
+                    <li>Мастер спорта России по&nbsp;художественной гимнастике</li>
+                    <li>Опыт — 4 года</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="coaches__item swiper-slide">
+                <h3>Алексей Лавров</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/coaches-alexey-lavrov-tablet.webp, ./img/coaches-alexey-lavrov-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/coaches-alexey-lavrov.webp, ./img/coaches-alexey-lavrov@2x.webp 2x">
 
-                </li>
-                <li class="coaches__item swiper-slide">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/coaches-alexey-lavrov-tablet.jpg, ./img/coaches-alexey-lavrov-tablet@2x.jpg 2x">
+                  <img src="./img/coaches-alexey-lavrov.jpg" srcset="./img/coaches-alexey-lavrov@2x.jpg 2x" width="260"
+                    height="294"
+                    alt="Фото Алексея Лаврова. Молодой человек с темными волосами и короткой стрижкой, в черном джемпере.">
+                </picture>
+                <div class="coaches__item-overlay">
+                  <h4>Алексей Лавров</h4>
+                  <p>Функциональные тренировки</p>
+                  <ul>
+                    <li>Мастер-тренер Coach Club</li>
+                    <li>Инструктор проекта «Гонка героев»</li>
+                    <li>Опыт — 5 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="coaches__item swiper-slide">
+                <h3>Александр Пашков</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/coaches-alexander-pashkov-tablet.webp, ./img/coaches-alexander-pashkov-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/coaches-alexander-pashkov.webp, ./img/coaches-alexander-pashkov@2x.webp 2x">
 
-                </li>
-                <li class="coaches__item swiper-slide">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/coaches-alexander-pashkov-tablet.jpg, ./img/coaches-alexander-pashkov-tablet@2x.jpg 2x">
+                  <img src="./img/coaches-alexander-pashkov.jpg" srcset="./img/coaches-alexander-pashkov@2x.jpg 2x"
+                    width="260" height="294"
+                    alt="Фото Александра Пашкова. Молодой человек с темными волосами и короткой стрижкой, в черной майке и очках.">
+                </picture>
+                <div class="coaches__item-overlay">
+                  <h4>Александр Пашков</h4>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="coaches__item swiper-slide">
+                <h3>Мария Кетова</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/coaches-maria-ketova-tablet.webp, ./img/coaches-maria-ketova-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/coaches-maria-ketova.webp, ./img/coaches-maria-ketova@2x.webp 2x">
 
-                </li>
-                <li class="coaches__item swiper-slide">
-
-                </li>
-                <li class="coaches__item swiper-slide">
-
-                </li>
-                <li class="coaches__item swiper-slide">
-
-                </li>
-              </ul>
-            </div>
-            <button class="coaches__button coaches__button--next" type="button" aria-label="Вперед."></button>
-
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/coaches-maria-ketova-tablet.jpg, ./img/coaches-maria-ketova-tablet@2x.jpg 2x">
+                  <img src="./img/coaches-maria-ketova.jpg" srcset="./img/coaches-maria-ketova@2x.jpg 2x" width="260"
+                    height="294"
+                    alt="Фото Марии Кетовой. Девушка с длинными темными волосами в темно-зеленом худи с надписью.">
+                </picture>
+                <div class="coaches__item-overlay">
+                  <h4>Мария Кетова</h4>
+                  <p>TRX</p>
+                  <ul>
+                    <li>Сертифицированный тренер групповых программ "TRX STC, FTC"</li>
+                    <li>КМС по&nbsp;легкой атлетике</li>
+                    <li>Опыт — 4 года</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
+          <!-- <button class="coaches__button coaches__button--next" type="button" aria-label="Вперед."></button> -->
+        </div>
       </section>
 
       <section class="advantages">
@@ -289,7 +363,7 @@
                 </div>
                 <div class="advantages__text">
                   <h3>Площадь</h3>
-                  <p>Занимайтесь без очередей и толкучки</p>
+                  <p>Занимайтесь без очередей и&nbsp;толкучки</p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--primary">
@@ -299,7 +373,7 @@
                 </div>
                 <div class="advantages__text">
                   <h3>Собственная парковка</h3>
-                  <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+                  <p>Вы всегда найдете место для своей&nbsp;машины на нашей парковке</p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--secondary">
@@ -308,7 +382,7 @@
                   <span>Тренажеров</span>
                 </div>
                 <div class="advantages__text">
-                  <h3>Современные тренажеры на все группы мышц</h3>
+                  <h3>Современные&nbsp;тренажеры на все группы мышц</h3>
                 </div>
               </li>
               <li class="advantages__item advantages__item--primary">
@@ -328,7 +402,7 @@
                 </div>
                 <div class="advantages__text">
                   <h3>Тренерский опыт</h3>
-                  <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                  <p>Добивайтесь своих целей быстрее&nbsp;с профессиональным тренером</p>
                 </div>
               </li>
             </ul>
@@ -445,8 +519,8 @@
                     </div>
                     <h3>Занятия с тренером входят в абонемент?</h3>
                     <div class="accordion__content" data-accordion="content">
-                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
-                        всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером<br> отдельно. В зале
+                        всегда присутствует дежурный тренер, которому можно задать вопрос,<br> получить небольшую
                         консультацию
                         по тренажеру или технике выполнения упражнения.</p>
                     </div>
@@ -555,13 +629,13 @@
                 <ul class="input-text__list">
                   <li class="input-text__item">
                     <label class="visually-hidden" for="name-field">Имя*:</label>
-                    <input class="input-text__input" type="text" name="name" id="name-field" placeholder="Имя"
-                      value="" required>
+                    <input class="input-text__input" type="text" name="name" id="name-field" placeholder="Имя" value=""
+                      required>
                   </li>
                   <li class="input-text__item">
                     <label class="visually-hidden" for="tel-field">Телефон*:</label>
-                    <input class="input-text__input" type="tel" name="tel" id="tel-field" placeholder="Телефон"
-                      value="" required>
+                    <input class="input-text__input" type="tel" name="tel" id="tel-field" placeholder="Телефон" value=""
+                      required>
                   </li>
                 </ul>
               </fieldset>

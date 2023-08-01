@@ -1,7 +1,7 @@
 .input-text {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border: 0;
 }
 
@@ -31,6 +31,8 @@
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
 
   &::-webkit-input-placeholder { /* WebKit browsers */
     color: #ffffff;

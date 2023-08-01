@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 68px 78px;
+  padding: 52px 78px;
   background-color: #ffffff;
   border: 7px solid #ffffff;
   text-align: center;
@@ -43,7 +43,7 @@
 
 .card h3 {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
   font-size: 26px;
   font-weight: 700;
   line-height: 110.2%;
@@ -55,12 +55,12 @@
 
 .card p {
   margin: 0;
-  margin-bottom: 96px;
+  margin-bottom: 66px;
 }
 
 .card__price {
   color: #103aae;
-  margin-bottom: 59px;
+  margin-bottom: 35px;
 }
 
 .card__price p {
@@ -79,7 +79,7 @@
     content: attr(data-parent);
     position: absolute;
     bottom: -5px;
-    right: -5px;
+    right: -15px;
     color: #e8e8e8;
     font-size: 100px;
     font-weight: 700;
@@ -101,6 +101,6 @@
 
 .card__btn {
   color: #102654;
-  padding: 27px 44px;
+  padding: 25px 44px;
   border: 2px solid;
 }

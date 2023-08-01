@@ -1,7 +1,6 @@
 .form {
-  max-width: 683px;
+  padding: 56px 170px 70px 103px;
   margin: 0 0 0 auto;
-  padding: 56px 103px 70px;
   color: #ffffff;
 
   @include vp-1199 {
@@ -17,6 +16,7 @@
 
 .form h3 {
   margin: 0;
+  margin-bottom: -5px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 800;

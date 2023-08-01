@@ -1,5 +1,5 @@
 .contacts {
-  padding: 56px 120px 70px;
+  padding: 80px 120px 40px;
   background-color: #ffffff;
 
   @include vp-1199 {
@@ -22,7 +22,7 @@
 
 .contacts h3 {
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 55px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -40,6 +40,11 @@
 
 .contacts__item {
   margin: 0;
+  justify-self: start;
+}
+
+.contacts__item:nth-child(2n) {
+  padding-left: 70px;
 }
 
 .contacts__item dt {
