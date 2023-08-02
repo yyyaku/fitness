@@ -12,7 +12,6 @@ body {
 }
 
 html {
-  min-width: 320px;
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
@@ -26,6 +25,8 @@ html {
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
+
+  scroll-behavior: smooth;
 }
 
 body {
