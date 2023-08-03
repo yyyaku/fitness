@@ -1,5 +1,9 @@
 .promo__wrapper {
   padding: 155px 0 120px 0;
+
+  @include vp-1199 {
+    padding: 102px 0 98px 0;
+  }
 }
 
 .promo__wrapper h2 {
@@ -28,6 +32,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @include vp-1199 {
+    gap: 30px;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;
@@ -157,6 +165,10 @@
   border: 7px solid;
   border-image: $button-buy-gradient;
   border-image-slice: 7;
+
+  &:nth-child(2n) p {
+    margin-right: 60px;
+  }
 }
 
 .promo__secondary h3 {
@@ -171,6 +183,11 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
+
+  @include vp-1199 {
+    margin: 0 0 34px;
+    font-size: 16px;
+  }
 }
 
 .promo__secondary .promo__link {

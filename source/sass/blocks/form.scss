@@ -4,9 +4,9 @@
   color: #ffffff;
 
   @include vp-1199 {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 44px 132px 66px;
   }
 
   @include vp-767 {
