@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Фитнесс центр в Омске">
   <title>Фитнес 2.0</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -17,53 +17,52 @@
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
-  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
-  <div class="page">
-    <h1 class="visually-hidden">SUPERGYM</h1>
-    <div class="page-header">
+  <div class="wrapper">
+    <main>
+      <h1 class="visually-hidden">SUPERGYM</h1>
+      <div class="page-header">
 
-      <header class="page-header__container container">
-        <a class="logo page-header__logo" aria-current="page">
-          <span class="visually-hidden">На&nbsp;главную.</span>
-          <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
-        </a>
-        <a class="page-header__link" href="tel:+78005555555">8-800-555-55-55</a>
-      </header>
+        <header class="page-header__container container">
+          <a class="logo page-header__logo" aria-current="page">
+            <span class="visually-hidden">На&nbsp;главную.</span>
+            <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
+          </a>
+          <a class="page-header__link" href="tel:+78005555555">8-800-555-55-55</a>
+        </header>
 
-      <section class="teaser page-header__teaser container">
-        <p>Омск</p>
-        <h2>Фитнес центр</h2>
-        <ul class="teaser__features">
-          <li class="teaser__feature">Тренажёрный зал</li>
-          <li class="teaser__feature">Групповые занятия</li>
-          <li class="teaser__feature">Кардио-зона</li>
-        </ul>
-        <a class="btn teaser__btn" href="#subscriptions">Купить&nbsp;абонемент</a>
-        <div class="teaser__image">
-          <picture>
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="./img/teaser-tablet.webp, ./img/teaser-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/teaser.webp, ./img/teaser@2x.webp 2x">
+        <section class="teaser page-header__teaser container">
+          <p>Омск</p>
+          <h2>Фитнес центр</h2>
+          <ul class="teaser__features">
+            <li class="teaser__feature">Тренажёрный зал</li>
+            <li class="teaser__feature">Групповые занятия</li>
+            <li class="teaser__feature">Кардио-зона</li>
+          </ul>
+          <a class="btn teaser__btn" href="#tabs">Купить&nbsp;абонемент</a>
+          <div class="teaser__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/teaser-tablet.webp, ./img/teaser-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/teaser.webp, ./img/teaser@2x.webp 2x">
 
-            <source media="(max-width: 1199px)" srcset="./img/teaser-tablet.jpg, ./img/teaser-tablet@2x.jpg 2x">
-            <img src="./img/teaser.jpg" srcset="./img/teaser@2x.jpg 2x" width="500" height="556"
-              alt="Тренер в футболке супермена.">
-          </picture>
-        </div>
-      </section>
-    </div>
-
-    <main class="page__main">
+              <source media="(max-width: 1199px)" srcset="./img/teaser-tablet.jpg, ./img/teaser-tablet@2x.jpg 2x">
+              <img src="./img/teaser.jpg" srcset="./img/teaser@2x.jpg 2x" width="500" height="556"
+                alt="Тренер в футболке супермена.">
+            </picture>
+          </div>
+        </section>
+      </div>
 
       <section class="about container">
         <div class="about__content">
           <h2>Тренажерный зал</h2>
           <p>Просторный зал площадью 900 кв/м</p>
           <p>
-            Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+            Supergym&nbsp;&mdash;&nbsp;самый большой фитнес центр&nbsp;за&nbsp;Уралом и&nbsp;идеальное место&nbsp;для
+            укрепления тела
             и&nbsp;здоровья. Тренажерный
             зал оснащен всем необходимым современным оборудованием для всех спортсменов.
           </p>
@@ -101,7 +100,7 @@
         </div>
       </section>
 
-      <section class="tabs">
+      <section class="tabs" id="tabs">
         <div class="tabs__wrapper container" data-tabs="parent">
           <h2>Абонементы</h2>
           <div class="tabs__controls" data-tabs="controls">
@@ -118,7 +117,7 @@
                 <div class="card__price">
                   <p data-parent="5000">5000<span>₽</span></p>
                 </div>
-                <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
+                <a class="btn card__btn" href="#">купить&nbsp;абонемент</a>
               </li>
               <li class="cards-list__item card">
                 <h3>Дневной</h3>
@@ -126,7 +125,7 @@
                 <div class="card__price">
                   <p data-parent="1700">1700<span>₽</span></p>
                 </div>
-                <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
+                <a class="btn card__btn" href="#">купить&nbsp;абонемент</a>
               </li>
               <li class="cards-list__item card">
                 <h3>Полный день</h3>
@@ -134,7 +133,7 @@
                 <div class="card__price">
                   <p data-parent="2700">2700<span>₽</span></p>
                 </div>
-                <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
+                <a class="btn card__btn" href="#">купить&nbsp;абонемент</a>
               </li>
             </ul>
 
@@ -145,7 +144,7 @@
                 <div class="card__price">
                   <p data-parent="5000">5000<span>₽</span></p>
                 </div>
-                <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
+                <a class="btn card__btn" href="#">купить&nbsp;абонемент</a>
               </li>
               <li class="cards-list__item card">
                 <h3>С тренером</h3>
@@ -153,7 +152,7 @@
                 <div class="card__price">
                   <p data-parent="5000">5000<span>₽</span></p>
                 </div>
-                <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
+                <a class="btn card__btn" href="#">купить&nbsp;абонемент</a>
               </li>
               <li class="cards-list__item card">
                 <h3>С тренером</h3>
@@ -161,7 +160,7 @@
                 <div class="card__price">
                   <p data-parent="5000">5000<span>₽</span></p>
                 </div>
-                <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
+                <a class="btn card__btn" href="#">купить&nbsp;абонемент</a>
               </li>
             </ul>
 
@@ -172,7 +171,7 @@
                 <div class="card__price">
                   <p data-parent="5000">5000<span>₽</span></p>
                 </div>
-                <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
+                <a class="btn card__btn" href="#">купить&nbsp;абонемент</a>
               </li>
               <li class="cards-list__item card">
                 <h3>С тренером</h3>
@@ -180,7 +179,7 @@
                 <div class="card__price">
                   <p data-parent="5000">5000<span>₽</span></p>
                 </div>
-                <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
+                <a class="btn card__btn" href="#">купить&nbsp;абонемент</a>
               </li>
               <li class="cards-list__item card">
                 <h3>С тренером</h3>
@@ -188,7 +187,7 @@
                 <div class="card__price">
                   <p data-parent="5000">5000<span>₽</span></p>
                 </div>
-                <a class="btn card__btn" type="button" href="#">купить&nbsp;абонемент</a>
+                <a class="btn card__btn" href="#">купить&nbsp;абонемент</a>
               </li>
             </ul>
 
@@ -245,109 +244,166 @@
       </section>
 
       <section class="coaches" id="coaches">
-        <h2>Тренеры</h2>
-        <div class="coaches__wrapper">
-          <!-- <button class="coaches__button coaches__button--prev" type="button" aria-label="Назад."></button> -->
-          <div class="coaches__swiper swiper">
-            <ul class="coaches__list swiper-wrapper">
-              <li class="coaches__item swiper-slide">
-                <h3>Анна Павлова</h3>
-                <picture>
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/coaches-anna-pavlova-tablet.webp, ./img/coaches-anna-pavlova-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="./img/coaches-anna-pavlova.webp, ./img/coaches-anna-pavlova@2x.webp 2x">
-
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/coaches-anna-pavlova-tablet.jpg, ./img/coaches-anna-pavlova-tablet@2x.jpg 2x">
-                  <img src="./img/coaches-anna-pavlova.jpg" srcset="./img/coaches-anna-pavlova@2x.jpg 2x" width="260"
-                    height="294" alt="Фото Анны Павловой. Девушка с длинными темными волосами в бордовом худи.">
-                </picture>
-                <div class="coaches__item-overlay">
-                  <h4>Анна Павлова</h4>
-                  <p>Stretching</p>
-                  <ul>
-                    <li>Дипломированный специалист РГУФКСМиТ</li>
-                    <li>Мастер спорта России по&nbsp;художественной гимнастике</li>
-                    <li>Опыт — 4 года</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="coaches__item swiper-slide">
-                <h3>Алексей Лавров</h3>
-                <picture>
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/coaches-alexey-lavrov-tablet.webp, ./img/coaches-alexey-lavrov-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="./img/coaches-alexey-lavrov.webp, ./img/coaches-alexey-lavrov@2x.webp 2x">
-
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/coaches-alexey-lavrov-tablet.jpg, ./img/coaches-alexey-lavrov-tablet@2x.jpg 2x">
-                  <img src="./img/coaches-alexey-lavrov.jpg" srcset="./img/coaches-alexey-lavrov@2x.jpg 2x" width="260"
-                    height="294"
-                    alt="Фото Алексея Лаврова. Молодой человек с темными волосами и короткой стрижкой, в черном джемпере.">
-                </picture>
-                <div class="coaches__item-overlay">
-                  <h4>Алексей Лавров</h4>
-                  <p>Функциональные тренировки</p>
-                  <ul>
-                    <li>Мастер-тренер Coach Club</li>
-                    <li>Инструктор проекта «Гонка героев»</li>
-                    <li>Опыт — 5 лет</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="coaches__item swiper-slide">
-                <h3>Александр Пашков</h3>
-                <picture>
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/coaches-alexander-pashkov-tablet.webp, ./img/coaches-alexander-pashkov-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="./img/coaches-alexander-pashkov.webp, ./img/coaches-alexander-pashkov@2x.webp 2x">
-
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/coaches-alexander-pashkov-tablet.jpg, ./img/coaches-alexander-pashkov-tablet@2x.jpg 2x">
-                  <img src="./img/coaches-alexander-pashkov.jpg" srcset="./img/coaches-alexander-pashkov@2x.jpg 2x"
-                    width="260" height="294"
-                    alt="Фото Александра Пашкова. Молодой человек с темными волосами и короткой стрижкой, в черной майке и очках.">
-                </picture>
-                <div class="coaches__item-overlay">
-                  <h4>Александр Пашков</h4>
-                  <p>CrossFit</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="coaches__item swiper-slide">
-                <h3>Мария Кетова</h3>
-                <picture>
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/coaches-maria-ketova-tablet.webp, ./img/coaches-maria-ketova-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="./img/coaches-maria-ketova.webp, ./img/coaches-maria-ketova@2x.webp 2x">
-
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/coaches-maria-ketova-tablet.jpg, ./img/coaches-maria-ketova-tablet@2x.jpg 2x">
-                  <img src="./img/coaches-maria-ketova.jpg" srcset="./img/coaches-maria-ketova@2x.jpg 2x" width="260"
-                    height="294"
-                    alt="Фото Марии Кетовой. Девушка с длинными темными волосами в темно-зеленом худи с надписью.">
-                </picture>
-                <div class="coaches__item-overlay">
-                  <h4>Мария Кетова</h4>
-                  <p>TRX</p>
-                  <ul>
-                    <li>Сертифицированный тренер групповых программ "TRX STC, FTC"</li>
-                    <li>КМС по&nbsp;легкой атлетике</li>
-                    <li>Опыт — 4 года</li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+        <div class="container">
+          <div class="coaches__wrapper">
+            <h2>Тренеры</h2>
+            <button class="coaches__button coaches__button--prev" type="button" aria-label="Назад."></button>
+            <div class="coaches__swiper swiper">
+              <ul class="coaches__list swiper-wrapper">
+                <li class="coaches__item swiper-slide">
+                  <h3>Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/coaches-anna-pavlova.webp, ./img/coaches-anna-pavlova@2x.webp 2x">
+                    <img src="./img/coaches-anna-pavlova.jpg" srcset="./img/coaches-anna-pavlova@2x.jpg 2x" width="260"
+                      height="294" alt="Фото Анны Павловой. Девушка с длинными темными волосами в бордовом худи.">
+                  </picture>
+                  <div class="coaches__item-overlay">
+                    <h4>Анна Павлова</h4>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="coaches__item swiper-slide">
+                  <h3>Алексей Лавров</h3>
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/coaches-alexey-lavrov.webp, ./img/coaches-alexey-lavrov@2x.webp 2x">
+                    <img src="./img/coaches-alexey-lavrov.jpg" srcset="./img/coaches-alexey-lavrov@2x.jpg 2x"
+                      width="260" height="294"
+                      alt="Фото Алексея Лаврова. Молодой человек с темными волосами и короткой стрижкой, в черном джемпере.">
+                  </picture>
+                  <div class="coaches__item-overlay">
+                    <h4>Алексей Лавров</h4>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="coaches__item swiper-slide">
+                  <h3>Александр Пашков</h3>
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/coaches-alexander-pashkov.webp, ./img/coaches-alexander-pashkov@2x.webp 2x">
+                    <img src="./img/coaches-alexander-pashkov.jpg" srcset="./img/coaches-alexander-pashkov@2x.jpg 2x"
+                      width="260" height="294"
+                      alt="Фото Александра Пашкова. Молодой человек с темными волосами и короткой стрижкой, в черной майке и очках.">
+                  </picture>
+                  <div class="coaches__item-overlay">
+                    <h4>Александр Пашков</h4>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="coaches__item swiper-slide">
+                  <h3>Мария Кетова</h3>
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/coaches-maria-ketova.webp, ./img/coaches-maria-ketova@2x.webp 2x">
+                    <img src="./img/coaches-maria-ketova.jpg" srcset="./img/coaches-maria-ketova@2x.jpg 2x" width="260"
+                      height="294"
+                      alt="Фото Марии Кетовой. Девушка с длинными темными волосами в темно-зеленом худи с надписью.">
+                  </picture>
+                  <div class="coaches__item-overlay">
+                    <h4>Мария Кетова</h4>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="coaches__item swiper-slide">
+                  <h3>Анна Павлова</h3>
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/coaches-anna-pavlova.webp, ./img/coaches-anna-pavlova@2x.webp 2x">
+                    <img src="./img/coaches-anna-pavlova.jpg" srcset="./img/coaches-anna-pavlova@2x.jpg 2x" width="260"
+                      height="294" alt="Фото Анны Павловой. Девушка с длинными темными волосами в бордовом худи.">
+                  </picture>
+                  <div class="coaches__item-overlay">
+                    <h4>Анна Павлова</h4>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="coaches__item swiper-slide">
+                  <h3>Алексей Лавров</h3>
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/coaches-alexey-lavrov.webp, ./img/coaches-alexey-lavrov@2x.webp 2x">
+                    <img src="./img/coaches-alexey-lavrov.jpg" srcset="./img/coaches-alexey-lavrov@2x.jpg 2x"
+                      width="260" height="294"
+                      alt="Фото Алексея Лаврова. Молодой человек с темными волосами и короткой стрижкой, в черном джемпере.">
+                  </picture>
+                  <div class="coaches__item-overlay">
+                    <h4>Алексей Лавров</h4>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="coaches__item swiper-slide">
+                  <h3>Александр Пашков</h3>
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/coaches-alexander-pashkov.webp, ./img/coaches-alexander-pashkov@2x.webp 2x">
+                    <img src="./img/coaches-alexander-pashkov.jpg" srcset="./img/coaches-alexander-pashkov@2x.jpg 2x"
+                      width="260" height="294"
+                      alt="Фото Александра Пашкова. Молодой человек с темными волосами и короткой стрижкой, в черной майке и очках.">
+                  </picture>
+                  <div class="coaches__item-overlay">
+                    <h4>Александр Пашков</h4>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="coaches__item swiper-slide">
+                  <h3>Мария Кетова</h3>
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/coaches-maria-ketova.webp, ./img/coaches-maria-ketova@2x.webp 2x">
+                    <img src="./img/coaches-maria-ketova.jpg" srcset="./img/coaches-maria-ketova@2x.jpg 2x" width="260"
+                      height="294"
+                      alt="Фото Марии Кетовой. Девушка с длинными темными волосами в темно-зеленом худи с надписью.">
+                  </picture>
+                  <div class="coaches__item-overlay">
+                    <h4>Мария Кетова</h4>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="coaches__button coaches__button--next" type="button" aria-label="Вперед."></button>
           </div>
-          <!-- <button class="coaches__button coaches__button--next" type="button" aria-label="Вперед."></button> -->
         </div>
       </section>
 
@@ -402,7 +458,7 @@
                 </div>
                 <div class="advantages__text">
                   <h3>Тренерский опыт</h3>
-                  <p>Добивайтесь своих целей быстрее&nbsp;с профессиональным тренером</p>
+                  <p>Добивайтесь своих целей&nbsp;быстрее с профессиональным тренером</p>
                 </div>
               </li>
             </ul>
@@ -443,7 +499,7 @@
             </li>
             <li class="promo__secondary">
               <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
+              <p>Корпоративный фитнес с&nbsp;командой</p>
               <a href="#" class="promo__link">подробнее</a>
             </li>
           </ul>
@@ -469,7 +525,8 @@
                     </div>
                     <h3>Как стать членом фитнес-центра?</h3>
                     <div class="accordion__content" data-accordion="content">
-                      <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                      <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
+                        При
                         покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                     </div>
                   </div>
@@ -501,7 +558,7 @@
                     <div class="accordion__button">
                       <button type="button" data-accordion="button">Открыть</button>
                     </div>
-                    <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
+                    <h3>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</h3>
                     <div class="accordion__content" data-accordion="content">
                       <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
                         всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
@@ -519,7 +576,8 @@
                     </div>
                     <h3>Занятия с тренером входят в абонемент?</h3>
                     <div class="accordion__content" data-accordion="content">
-                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером<br> отдельно. В зале
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером<br> отдельно. В
+                        зале
                         всегда присутствует дежурный тренер, которому можно задать вопрос,<br> получить небольшую
                         консультацию
                         по тренажеру или технике выполнения упражнения.</p>
@@ -554,6 +612,56 @@
                       <button type="button" data-accordion="button">Открыть</button>
                     </div>
                     <h3>Что такое семейный доступ и доступ для друзей?</h3>
+                    <div class="accordion__content" data-accordion="content">
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
+                        всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
+                        консультацию
+                        по тренажеру или технике выполнения упражнения.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="accordions__list" data-tabs="element">
+                <li class="accordions__item accordion" data-accordion="parent">
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button">
+                      <button type="button" data-accordion="button">Открыть</button>
+                    </div>
+                    <h3>Предлагает ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</h3>
+                    <div class="accordion__content" data-accordion="content">
+                      <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит
+                        ваши данные, цели и&nbsp;предложит программу питания.</p>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button">
+                      <button type="button" data-accordion="button">Открыть</button>
+                    </div>
+                    <h3>Проводятся ли в клубе какие-&nbsp;либо мероприятия или&nbsp;соревнования?</h3>
+                    <div class="accordion__content" data-accordion="content">
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
+                        всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
+                        консультацию
+                        по тренажеру или технике выполнения упражнения.</p>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button">
+                      <button type="button" data-accordion="button">Открыть</button>
+                    </div>
+                    <h3>Можно ли приобрести в центре спортивное питание?</h3>
+                    <div class="accordion__content" data-accordion="content">
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
+                        всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
+                        консультацию
+                        по тренажеру или технике выполнения упражнения.</p>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button">
+                      <button type="button" data-accordion="button">Открыть</button>
+                    </div>
+                    <h3>Есть ли в центре детская комната?</h3>
                     <div class="accordion__content" data-accordion="content">
                       <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
                         всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
@@ -623,14 +731,14 @@
           <h2 class="visually-hidden">Бесплатное занятие и контакты</h2>
           <div class="form">
             <h3>Бесплатное&nbsp;занятие</h3>
-            <form action="https://echo.htmlacademy.ru">
+            <form method="post" action="https://echo.htmlacademy.ru">
               <fieldset class="input-text">
                 <h2 class="visually-hidden">Представьтесь:</h2>
                 <ul class="input-text__list">
                   <li class="input-text__item">
                     <label class="visually-hidden" for="name-field">Имя*:</label>
                     <input class="input-text__input" type="text" name="name" id="name-field" placeholder="Имя" value=""
-                      required>
+                      minlength="2" maxlength="25" required>
                   </li>
                   <li class="input-text__item">
                     <label class="visually-hidden" for="tel-field">Телефон*:</label>
@@ -666,73 +774,70 @@
         </div>
       </section>
 
-
-    </main>
-
-    <footer class="page-footer">
-      <div class="page-footer__inner container">
-        <a class="logo page-footer__logo" aria-current="page">
-          <span class="visually-hidden">На главную.</span>
-          <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
-        </a>
-        <nav class="page-footer__nav-wrapper">
-          <ul class="nav page-footer__nav">
-            <li>
-              <a class="nav__link" href="#">
-                Услуги
+      <footer class="page-footer">
+        <div class="page-footer__inner container">
+          <a class="logo page-footer__logo" aria-current="page">
+            <span class="visually-hidden">На главную.</span>
+            <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
+          </a>
+          <nav class="page-footer__nav-wrapper">
+            <ul class="nav page-footer__nav">
+              <li>
+                <a class="nav__link" href="#">
+                  Услуги
+                </a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">
+                  Абонементы
+                </a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">
+                  Акции
+                </a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">
+                  Тренеры
+                </a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">
+                  Расписание
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="socials page-footer__socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Вконтакте.</span>
+                <svg width="14" height="14">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
               </a>
             </li>
-            <li>
-              <a class="nav__link" href="#">
-                Абонементы
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Одноклассники.</span>
+                <svg width="20" height="14">
+                  <use href="img/sprite.svg#ok"></use>
+                </svg>
               </a>
             </li>
-            <li>
-              <a class="nav__link" href="#">
-                Акции
-              </a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">
-                Тренеры
-              </a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">
-                Расписание
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Reddit.</span>
+                <svg width="20" height="14">
+                  <use href="img/sprite.svg#reddit"></use>
+                </svg>
               </a>
             </li>
           </ul>
-        </nav>
-        <ul class="socials page-footer__socials">
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <span class="visually-hidden">Мы&nbsp;в&nbsp;Вконтакте.</span>
-              <svg width="14" height="14">
-                <use href="img/sprite.svg#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <span class="visually-hidden">Мы&nbsp;в&nbsp;Одноклассниках.</span>
-              <svg width="20" height="14">
-                <use href="img/sprite.svg#ok"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <span class="visually-hidden">Мы&nbsp;в&nbsp;Reddit.</span>
-              <svg width="20" height="14">
-                <use href="img/sprite.svg#reddit"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-
+        </div>
+      </footer>
+    </main>
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

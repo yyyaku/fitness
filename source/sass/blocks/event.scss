@@ -2,20 +2,20 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 130px 0 50px 0;
+  padding: 130px 0 50px;
   max-width: 1160px;
 
   @include vp-1199 {
-    padding: 100px 0 50px 0;
+    padding: 100px 0 50px;
     max-width: 994px;
   }
 
   @include vp-1023 {
-    padding: 100px 0 50px 0;
+    padding: 100px 0 50px;
   }
 
   @include vp-767 {
-    padding: 70px 0 30px 0;
+    padding: 72px 0 30px;
     flex-direction: column;
   }
 }
@@ -51,7 +51,7 @@
 
   @include vp-1023 {
     gap: 4px 35px;
-    margin: 0 0 1px 0;
+    margin: 0 0 1px;
     max-width: 202px;
   }
 
@@ -88,15 +88,15 @@
 }
 
 .event__top-content dl {
-  margin: -5px 0 0 0;
+  margin: -5px 0 0;
 
   @include vp-1023 {
-    margin: -4px 0 0 0;
+    margin: -4px 0 0;
   }
 
   @include vp-767 {
     justify-self: end;
-    margin: -4px 2px 0 0;
+    margin: -4px 2px 0;
     max-width: 56px;
   }
 }
@@ -212,13 +212,13 @@
 
 .event__content-wrapper a {
   display: inline-block;
-  margin: 45px 0 0 0;
+  margin: 45px 0 0;
   padding: 25px 10px 24px 10px;
   width: 100%;
   max-width: 343px;
 
   @include vp-1023 {
-    margin: 30px 0 0 0;
+    margin: 30px 0 0;
     padding: 13px 10px 12px 10px;
     border: 2px solid $color-default-white;
     font-size: 10px;
@@ -227,7 +227,7 @@
   }
 
   @include vp-767 {
-    margin: 30px 0 0 0;
+    margin: 30px 0 0;
     max-width: 100%;
   }
 }

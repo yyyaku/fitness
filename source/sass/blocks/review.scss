@@ -5,11 +5,11 @@
   max-width: 680px;
 
   @include vp-1199 {
-    padding: 42px 0 100px 0;
+    padding: 90px 0 100px;
   }
 
   @include vp-767 {
-    padding: 23px 0 70px 0;
+    padding: 62px 32px 70px;
   }
 }
 
@@ -42,11 +42,6 @@
 
   @include vp-1199 {
     max-width: 566px;
-  }
-
-  @include vp-767 {
-    max-width: 226px;
-    margin: 0 auto;
   }
 }
 
@@ -136,7 +131,7 @@
 
 .reviews__button {
   position: absolute;
-  top: 51.5%;
+  top: 55.5%;
   width: 17px;
   height: 32px;
   border: none;
@@ -144,20 +139,15 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
-  @include hover {
-    opacity: 50%;
-  }
-
   &:disabled {
     cursor: not-allowed;
   }
 
   @include vp-1199 {
-    top: 49.7%;
+    top: 54%;
   }
 
   @include vp-767 {
-    top: 51.2%;
     width: 11px;
     height: 19px;
   }
