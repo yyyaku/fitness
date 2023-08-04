@@ -5,11 +5,11 @@
   max-width: 680px;
 
   @include vp-1199 {
-    padding: 90px 0 100px 0;
+    padding: 90px 0 100px;
   }
 
   @include vp-767 {
-    padding: 23px 0 70px 0;
+    padding: 62px 32px 70px;
   }
 }
 
@@ -152,7 +152,6 @@
   }
 
   @include vp-767 {
-    top: 51.2%;
     width: 11px;
     height: 19px;
   }

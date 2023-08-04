@@ -2,6 +2,12 @@
   background-color: #f8f9fc;
 }
 
+.advantages .container {
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
 .advantages__wrapper {
   max-width: 1040px;
   padding: 130px 0 110px;
@@ -9,6 +15,10 @@
 
   @include vp-1199 {
     padding: 105px 0 95px;
+  }
+
+  @include vp-767 {
+    padding: 70px 0 65px;
   }
 }
 
@@ -47,7 +57,8 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 40px;
+    text-align: center;
   }
 }
 
@@ -64,7 +75,10 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    text-align: center;
+    gap: 0;
+    padding: 0 34px;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -99,6 +113,10 @@
     font-size: 58px;
     line-height: 87px;
   }
+
+  @include vp-767 {
+    margin: -18px 0 0;
+  }
 }
 
 .advantages__number span {
@@ -114,8 +132,14 @@
   }
 }
 
+.advantages__text {
+  @include vp-767 {
+    margin: 7px 0 0;
+  }
+}
+
 .advantages__text h3 {
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   font-size: 22px;
   font-weight: 700;
   line-height: 33px;
@@ -132,12 +156,15 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22.4px;
+
+  @include vp-767 {
+    margin: 0 12px;
+  }
 }
 
 .advantages__item--secondary {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
-  justify-self: center;
   padding: 60px 34px;
   margin: 5px 0 15px 0;
   background-color: #1c3374;
@@ -149,13 +176,16 @@
     grid-row: 2 / 3;
     width: 65%;
     padding: 30px 135px 35px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   @include vp-767 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    padding: 50px 74px;
+    margin: 6px 0;
+    padding: 35px 34px 33px;
+    width: 100%;
+    min-height: 239px;
   }
 }
 
@@ -181,10 +211,18 @@
     font-size: 22px;
     line-height: 33px;
   }
+
+  @include vp-767 {
+    margin: -20px 0 0;
+  }
 }
 
 .advantages__item--secondary h3 {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+
+  @include vp-767 {
+    margin: 0 40px;
+  }
 }

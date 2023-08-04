@@ -6,7 +6,11 @@
   color: #102654;
 
   @include vp-1199 {
-    padding: 30px 0 17px 0;
+    padding: 35px 0 12px;
+  }
+
+  @include vp-767 {
+    padding: 22px 0 8px;
   }
 }
 
@@ -16,9 +20,15 @@
   @include vp-1199 {
     padding: 30px 0 25px;
   }
+
+  @include vp-767 {
+    padding: 22px 0 20px;
+  }
 }
 
 .accordion__button {
+  display: flex;
+
   &::before {
     content: "";
     position: absolute;
@@ -30,6 +40,12 @@
     border: 1px solid #1c3374;
     border-radius: 50%;
     cursor: pointer;
+
+    @include vp-767 {
+      top: 36%;
+      width: 32px;
+      height: 32px;
+    }
   }
 
   &:hover,
@@ -56,6 +72,7 @@
   position: relative;
   grid-column: 2/3;
   grid-row: 1/2;
+  align-self: center;
   width: 42px;
   height: 42px;
   padding: 0;
@@ -63,6 +80,11 @@
   background: transparent;
   border: none;
   cursor: pointer;
+
+  @include vp-767 {
+    width: 32px;
+    height: 32px;
+  }
 
   &::before,
   &::after {
@@ -73,6 +95,11 @@
     width: 18px;
     height: 1px;
     background-color: #1c3374;
+
+    @include vp-767 {
+      top: 10px;
+      left: 8px;
+    }
   }
 
   &::before {
@@ -124,6 +151,7 @@
   .accordion__button {
     &::before {
       background-color: #ffffff;
+      top: 18%;
     }
   }
 
@@ -145,10 +173,25 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 28.8px;
+
+  @include vp-1199 {
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
 }
 
 .accordion__content {
   grid-column: 1/2;
+
+  @include vp-767 {
+    grid-column: 1/3;
+  }
 }
 
 .accordion__content p {
@@ -156,4 +199,14 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 25.2px;
+
+  @include vp-1199 {
+    margin-right: 80px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
 }

@@ -1,7 +1,6 @@
 .input-text {
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
   border: 0;
 }
 
@@ -11,16 +10,20 @@
   gap: 30px;
   max-width: 410px;
   padding: 0;
+  margin: 0 0 25px;
   list-style-type: none;
 
   @include vp-1199 {
     gap: 60px;
     max-width: 472px;
+    margin-bottom: 27px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    gap: 26px;
     width: 100%;
+    margin-bottom: 40px;
   }
 }
 
