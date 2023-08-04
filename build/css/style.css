@@ -4070,11 +4070,6 @@ button,
   background-repeat: no-repeat;
   cursor: pointer;
 }
-@media (hover: hover) {
-  .reviews__button:hover:not(.focus-visible) {
-    opacity: 50%;
-  }
-}
 .reviews__button:disabled {
   cursor: not-allowed;
 }

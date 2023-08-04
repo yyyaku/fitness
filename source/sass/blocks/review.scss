@@ -139,10 +139,6 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
-  @include hover {
-    opacity: 50%;
-  }
-
   &:disabled {
     cursor: not-allowed;
   }
