@@ -1666,9 +1666,12 @@ button,
   margin: 0 0 45px 16px;
   border: 2px solid #ffffff;
 }
-.teaser__btn:hover, .teaser__btn:focus {
+.teaser__btn:hover, .teaser__btn:focus-visible {
   background-color: #ffffff;
   color: #103aae;
+}
+.teaser__btn:focus {
+  outline: none;
 }
 .teaser__btn:active {
   background-color: #ffffff;
@@ -2949,6 +2952,18 @@ button,
     background-image: url("./../img/svg/button-prev-mobile.svg");
   }
 }
+.coaches__button--prev:hover::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: -30%;
+  left: -17px;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: 1px solid #1c3374;
+  border-radius: 50%;
+}
 .coaches__button--next {
   right: -55px;
   background-image: url("./../img/svg/button-next.svg");
@@ -2962,6 +2977,24 @@ button,
   .coaches__button--next {
     background-image: url("./../img/svg/button-next-mobile.svg");
   }
+}
+.coaches__button:hover::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: -30%;
+  left: -20px;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: 1px solid #1c3374;
+  border-radius: 50%;
+}
+.coaches__button:focus::before {
+  outline: none;
+}
+.coaches__button:active::before {
+  background-color: #1c3374;
 }
 
 .advantages {
@@ -3392,7 +3425,7 @@ button,
   content: " ";
   position: absolute;
   bottom: 0;
-  width: 80%;
+  width: 100%;
   height: 1px;
   background-color: #ffffff;
 }
@@ -3511,7 +3544,7 @@ button,
   position: absolute;
   content: "";
   bottom: 0;
-  width: 80%;
+  width: 100%;
   height: 1px;
   background-color: #1c3374;
 }
@@ -4235,6 +4268,20 @@ button,
 }
 .input-text__input:active::-webkit-input-placeholder, .input-text__input:focus::-webkit-input-placeholder { /* WebKit browsers */
   color: transparent;
+}
+.input-text__input:disabled {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.input-text__input:disabled .input-text__input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.input-text__item.is-invalid input {
+  border-bottom: 1px solid #ff121f;
+}
+
+.input-text__item.is-invalid span {
+  color: #ff121f;
 }
 
 .form-control__btn {

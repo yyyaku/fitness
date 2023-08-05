@@ -61,4 +61,20 @@
       color: transparent;
     }
   }
+
+  &:disabled {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+
+    .input-text__input::-webkit-input-placeholder {
+      color: rgb(255, 255, 255, 0.4);
+    }
+  }
+}
+
+.input-text__item.is-invalid input {
+  border-bottom: 1px solid #ff121f;
+}
+
+.input-text__item.is-invalid span {
+  color: #ff121f;
 }
