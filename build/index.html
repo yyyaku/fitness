@@ -729,20 +729,22 @@
       <section class="content-group">
         <div class="content-group__wrapper">
           <h2 class="visually-hidden">Бесплатное занятие и контакты</h2>
-          <div class="form">
+          <div class="form" data-form-validate="data-form-validate" data-callback="base">
             <h3>Бесплатное&nbsp;занятие</h3>
             <form method="post" action="https://echo.htmlacademy.ru">
               <fieldset class="input-text">
                 <h2 class="visually-hidden">Представьтесь:</h2>
                 <ul class="input-text__list">
-                  <li class="input-text__item">
+                  <li class="input-text__item" data-validate-type="text" , data-limitation="name" ,
+                    data-message-base="Поле обязательно к заполнению" , data-required>
                     <label class="visually-hidden" for="name-field">Имя*:</label>
-                    <input class="input-text__input" type="text" name="name" id="name-field" placeholder="Имя" value=""
+                    <input class="input-text__input" type="text" name="name" id="name-field" placeholder="Имя"
                       minlength="2" maxlength="25" required>
                   </li>
-                  <li class="input-text__item">
+                  <li class="input-text__item" data-validate-type="phone" ,
+                    data-message-base="Поле обязательно к заполнению" , data-required>
                     <label class="visually-hidden" for="tel-field">Телефон*:</label>
-                    <input class="input-text__input" type="tel" name="tel" id="tel-field" placeholder="Телефон" value=""
+                    <input class="input-text__input" type="tel" name="tel" id="tel-field" placeholder="Телефон"
                       required>
                   </li>
                 </ul>

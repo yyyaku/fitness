@@ -221,6 +221,21 @@
     @include vp-767 {
       background-image: url("./../img/svg/button-prev-mobile.svg");
     }
+
+    &:hover {
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: -30%;
+        left: -17px;
+        width: 56px;
+        height: 56px;
+        padding: 0;
+        border: 1px solid #1c3374;
+        border-radius: 50%;
+      }
+    }
   }
 
   &--next {
@@ -233,6 +248,33 @@
 
     @include vp-767 {
       background-image: url("./../img/svg/button-next-mobile.svg");
+    }
+  }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: -30%;
+      left: -20px;
+      width: 56px;
+      height: 56px;
+      padding: 0;
+      border: 1px solid #1c3374;
+      border-radius: 50%;
+    }
+  }
+
+  &:focus {
+    &::before {
+      outline: none;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #1c3374;
     }
   }
 }
