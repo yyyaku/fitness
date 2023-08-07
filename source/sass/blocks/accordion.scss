@@ -1,5 +1,4 @@
 .accordion__element {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr auto;
   padding: 32px 0 20px;
@@ -14,25 +13,15 @@
   }
 }
 
-.accordion__element.is-active {
-  padding: 32px 0 25px;
-
-  @include vp-1199 {
-    padding: 30px 0 25px;
-  }
-
-  @include vp-767 {
-    padding: 22px 0 20px;
-  }
-}
-
 .accordion__button {
   display: flex;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 50%;
+    transform: translateY(-50%);
     display: block;
     width: 42px;
     height: 42px;
@@ -42,14 +31,17 @@
     cursor: pointer;
 
     @include vp-767 {
-      top: 36%;
       width: 32px;
       height: 32px;
     }
   }
 
-  &:hover,
   &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus-visible {
     &::before {
       background-color: #102654;
     }
@@ -90,14 +82,13 @@
   &::after {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 50%;
     left: 13px;
     width: 18px;
     height: 1px;
     background-color: #1c3374;
 
     @include vp-767 {
-      top: 10px;
       left: 8px;
     }
   }
@@ -148,10 +139,20 @@
 }
 
 .accordion__element.is-active {
+  padding: 32px 0 25px;
+
+  @include vp-1199 {
+    padding: 30px 0 25px;
+  }
+
+  @include vp-767 {
+    padding: 22px 0 20px;
+  }
+
   .accordion__button {
     &::before {
       background-color: #ffffff;
-      top: 18%;
+      top: 50%;
     }
   }
 
