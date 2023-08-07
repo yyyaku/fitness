@@ -18,12 +18,16 @@
   align-items: center;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: #103aae;
 
     svg {
       color: #ffffff;
     }
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {

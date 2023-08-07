@@ -10,6 +10,12 @@
   background: linear-gradient(83deg, #003d85 0%, #b80027 88.54%);
   cursor: pointer;
 
+  @include vp-1199 {
+    top: 37%;
+    width: 52px;
+    height: 52px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -20,6 +26,13 @@
     border-top: 8px solid transparent;
     border-left: 16px solid #ffffff;
     border-bottom: 8px solid transparent;
+
+    @include vp-1199 {
+      top: 42%;
+      border-top: 4px solid transparent;
+      border-left: 8px solid #ffffff;
+      border-bottom: 4px solid transparent;
+    }
   }
 
   &::after {
@@ -34,16 +47,10 @@
     border: 2px solid transparent;
     mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
     mask-composite: exclude;
-  }
 
-  @include vp-1199 {
-    width: 52px;
-    height: 52px;
-  }
-
-  @include vp-767 {
-    &::before {
-      left: 46%;
+    @include vp-1199 {
+      width: 73px;
+      height: 73px;
     }
   }
 

@@ -192,62 +192,40 @@
 
 .coaches__button {
   position: absolute;
-  top: 53%;
-  width: 17px;
-  height: 32px;
-  border: none;
+  top: 54%;
+  border: solid #102654;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 10px;
   background-color: transparent;
-  background-repeat: no-repeat;
   cursor: pointer;
 
   @include vp-1199 {
-    top: 50%;
+    top: 51%;
   }
 
   @include vp-767 {
-    top: 52.5%;
-    width: 11px;
-    height: 19px;
+    top: 54%;
+    padding: 5px;
   }
 
   &--prev {
     left: -57px;
-    background-image: url("./../img/svg/button-prev.svg");
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 
     @include vp-1199 {
-      left: -1px;
-    }
-
-    @include vp-767 {
-      background-image: url("./../img/svg/button-prev-mobile.svg");
-    }
-
-    &:hover {
-      &::before {
-        position: absolute;
-        content: "";
-        display: block;
-        top: -30%;
-        left: -17px;
-        width: 56px;
-        height: 56px;
-        padding: 0;
-        border: 1px solid #1c3374;
-        border-radius: 50%;
-      }
+      left: 3px;
     }
   }
 
   &--next {
     right: -55px;
-    background-image: url("./../img/svg/button-next.svg");
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 
     @include vp-1199 {
-      right: 0;
-    }
-
-    @include vp-767 {
-      background-image: url("./../img/svg/button-next-mobile.svg");
+      right: 4px;
     }
   }
 
@@ -256,8 +234,8 @@
       position: absolute;
       content: "";
       display: block;
-      top: -30%;
-      left: -20px;
+      top: -85%;
+      left: -15px;
       width: 56px;
       height: 56px;
       padding: 0;
@@ -266,15 +244,15 @@
     }
   }
 
-  &:focus {
-    &::before {
-      outline: none;
-    }
-  }
-
   &:active {
+    border: solid #ffffff;
+
     &::before {
       background-color: #1c3374;
     }
+  }
+
+  &:disabled {
+    border: solid rgb(28, 51, 116, 0.3);
   }
 }
