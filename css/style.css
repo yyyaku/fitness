@@ -2368,16 +2368,16 @@ button,
 
 .coaches__button--prev {
   left: -57px;
+  -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
 }
 
 .coaches__button--next {
   right: -55px;
+  -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }
 
 .coaches__button:hover::before {
@@ -2457,9 +2457,9 @@ button,
 
 .advantages__number p {
   margin: -20px 0 0 0;
-  background: linear-gradient(143deg, #D10A42 0%, #0041CA 100%);
-  background-clip: text;
+  background: linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 71px;
   font-weight: 700;
@@ -2505,8 +2505,8 @@ button,
 
 .advantages__item--secondary p {
   background: #ffffff;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 74px;
   font-weight: 700;
@@ -2806,7 +2806,7 @@ button,
 .accordions__controls button:active {
   color: #ffffff;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: transparent;
+  border: 1px solid transparent;
 }
 
 .accordions__controls button:disabled {
@@ -3136,7 +3136,7 @@ button,
   list-style-type: none;
 }
 
-.input-text__input {
+.input-text__item input {
   display: block;
   width: 100%;
   padding: 10px 0;
@@ -3148,34 +3148,34 @@ button,
   font-weight: 400;
 }
 
-.input-text__input::-webkit-input-placeholder {
+.input-text__item input::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #ffffff;
 }
 
-.input-text__input:hover {
+.input-text__item input:hover {
   border-bottom: 1px solid #ffffff;
 }
 
-.input-text__input:active,
-.input-text__input:focus {
+.input-text__item input:active,
+.input-text__item input:focus {
   outline: none;
   padding: 10px 15px;
   margin: 0 -15px 0 0;
   border: 1px solid #ffffff;
 }
 
-.input-text__input:active::-webkit-input-placeholder,
-.input-text__input:focus::-webkit-input-placeholder {
+.input-text__item input:active::-webkit-input-placeholder,
+.input-text__item input:focus::-webkit-input-placeholder {
   /* WebKit browsers */
   color: transparent;
 }
 
-.input-text__input:disabled {
+.input-text__item input:disabled {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.input-text__input:disabled .input-text__input::-webkit-input-placeholder {
+.input-text__item input:disabled .input-text__item input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -3930,7 +3930,7 @@ button,
     margin-bottom: 27px;
   }
 
-  .input-text__input {
+  .input-text__item input {
     padding: 8px 0;
   }
 
