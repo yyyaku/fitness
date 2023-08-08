@@ -212,7 +212,6 @@
   &--prev {
     left: -57px;
     transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
 
     @include vp-1199 {
       left: 3px;
@@ -222,7 +221,6 @@
   &--next {
     right: -55px;
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
 
     @include vp-1199 {
       right: 4px;

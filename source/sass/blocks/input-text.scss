@@ -27,7 +27,7 @@
   }
 }
 
-.input-text__input {
+.input-text__item input {
   display: block;
   width: 100%;
   padding: 10px 0;
@@ -65,7 +65,7 @@
   &:disabled {
     border-bottom: 1px solid rgb(255, 255, 255, 0.4);
 
-    .input-text__input::-webkit-input-placeholder {
+    .input-text__item input::-webkit-input-placeholder {
       color: rgb(255, 255, 255, 0.4);
     }
   }

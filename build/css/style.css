@@ -2949,9 +2949,9 @@ button,
 }
 .coaches__button--prev {
   left: -57px;
-  -ms-transform: rotate(135deg);
-      transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 @media (max-width: 1199px) {
   .coaches__button--prev {
@@ -2960,9 +2960,9 @@ button,
 }
 .coaches__button--next {
   right: -55px;
-  -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 @media (max-width: 1199px) {
   .coaches__button--next {
@@ -3108,9 +3108,9 @@ button,
 
 .advantages__number p {
   margin: -20px 0 0 0;
-  background: linear-gradient(143deg, #D10A42 0%, #0041CA 100%);
-  background-clip: text;
+  background: linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 71px;
   font-weight: 700;
@@ -3218,8 +3218,8 @@ button,
 
 .advantages__item--secondary p {
   background: #ffffff;
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 74px;
   font-weight: 700;
@@ -3705,7 +3705,7 @@ button,
 .accordions__controls button:active {
   color: #ffffff;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: transparent;
+  border: 1px solid transparent;
 }
 .accordions__controls button:disabled {
   color: #c8c9cc;
@@ -4245,7 +4245,7 @@ button,
   }
 }
 
-.input-text__input {
+.input-text__item input {
   display: block;
   width: 100%;
   padding: 10px 0;
@@ -4257,29 +4257,29 @@ button,
   font-weight: 400;
 }
 @media (max-width: 1199px) {
-  .input-text__input {
+  .input-text__item input {
     padding: 8px 0;
   }
 }
-.input-text__input::-webkit-input-placeholder { /* WebKit browsers */
+.input-text__item input::-webkit-input-placeholder { /* WebKit browsers */
   color: #ffffff;
 }
-.input-text__input:hover {
+.input-text__item input:hover {
   border-bottom: 1px solid #ffffff;
 }
-.input-text__input:active, .input-text__input:focus {
+.input-text__item input:active, .input-text__item input:focus {
   outline: none;
   padding: 10px 15px;
   margin: 0 -15px 0 0;
   border: 1px solid #ffffff;
 }
-.input-text__input:active::-webkit-input-placeholder, .input-text__input:focus::-webkit-input-placeholder { /* WebKit browsers */
+.input-text__item input:active::-webkit-input-placeholder, .input-text__item input:focus::-webkit-input-placeholder { /* WebKit browsers */
   color: transparent;
 }
-.input-text__input:disabled {
+.input-text__item input:disabled {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
-.input-text__input:disabled .input-text__input::-webkit-input-placeholder {
+.input-text__item input:disabled .input-text__item input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
