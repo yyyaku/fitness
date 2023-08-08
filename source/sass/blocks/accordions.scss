@@ -95,7 +95,7 @@
   &:active {
     color: #ffffff;
     background: $button-buy-gradient-hover;
-    border: transparent;
+    border: 1px solid transparent;
   }
 
   &:disabled {

@@ -102,7 +102,6 @@
   margin: -20px 0 0 0;
   background: $text-gradient;
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 71px;
   font-weight: 700;
@@ -192,7 +191,6 @@
 .advantages__item--secondary p {
   background: #ffffff;
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 74px;
   font-weight: 700;

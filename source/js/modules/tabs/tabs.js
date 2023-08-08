@@ -184,7 +184,7 @@ export class Tabs {
     const activeControl = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="control"].is-active'), parentElement);
     const activeElement = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="element"].is-active'), parentElement);
     const currentHeight = contentElement.offsetHeight;
-    const newHeight = tabElements[currentIndex].offsetHeight;
+    const newHeight = tabElements[currentIndex] && tabElements[currentIndex].offsetHeight || 0;
 
     parentElement.classList.add('no-action');
     document.activeElement.blur();
@@ -197,24 +197,28 @@ export class Tabs {
       activeElement.classList.remove('is-active');
     }
 
-    if (currentHeight > newHeight) {
-      setTimeout(() => {
+    if (newHeight !== 0) {
+      if (currentHeight > newHeight) {
+        setTimeout(() => {
+          if (dataHeight !== 'max' && dataHeight !== 'unset') {
+            contentElement.style.height = newHeight + 'px';
+          }
+          control.classList.add('is-active');
+          tabElements[currentIndex].classList.add('is-active');
+          parentElement.classList.remove('no-action');
+        }, dataDelay);
+      } else {
         if (dataHeight !== 'max' && dataHeight !== 'unset') {
           contentElement.style.height = newHeight + 'px';
         }
-        control.classList.add('is-active');
-        tabElements[currentIndex].classList.add('is-active');
-        parentElement.classList.remove('no-action');
-      }, dataDelay);
-    } else {
-      if (dataHeight !== 'max' && dataHeight !== 'unset') {
-        contentElement.style.height = newHeight + 'px';
+        setTimeout(() => {
+          control.classList.add('is-active');
+          tabElements[currentIndex].classList.add('is-active');
+          parentElement.classList.remove('no-action');
+        }, dataDelay);
       }
-      setTimeout(() => {
-        control.classList.add('is-active');
-        tabElements[currentIndex].classList.add('is-active');
-        parentElement.classList.remove('no-action');
-      }, dataDelay);
+    } else {
+      parentElement.classList.remove('no-action');
     }
   }
 }
