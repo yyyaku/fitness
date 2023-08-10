@@ -1550,9 +1550,12 @@ button,
 }
 @media (max-width: 1199px) {
   .teaser {
-    -ms-grid-columns: 113px 187px 1fr;
-    grid-template-columns: 113px 187px 1fr;
+    -ms-grid-columns: 113px 187px 330px;
+    grid-template-columns: 113px 187px 330px;
     gap: 12px 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     min-height: auto;
     padding-top: 25px;
     padding-bottom: 82px;
@@ -1560,9 +1563,9 @@ button,
 }
 @media (max-width: 767px) {
   .teaser {
-        grid-template-areas: ". label" "features heading" "btn btn";
-    -ms-grid-columns: 113px 12px 1fr;
-    grid-template-columns: 113px 1fr;
+        grid-template-areas: ". . label ." ". features heading ." "btn btn btn btn";
+    -ms-grid-columns: 1fr 12px 113px 12px 177px 12px 1fr;
+    grid-template-columns: 1fr 113px 177px 1fr;
     -webkit-column-gap: 12px;
        -moz-column-gap: 12px;
             column-gap: 12px;
@@ -1709,21 +1712,21 @@ button,
 @media (max-width: 767px) {
   .teaser p {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 5;
   }
   .teaser h2 {
     -ms-grid-row: 2;
-    -ms-grid-column: 3;
+    -ms-grid-column: 5;
   }
   .teaser__features {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
+    -ms-grid-column: 3;
   }
   .teaser__btn {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 7;
   }
 }
 @media (max-width: 1199px) {
@@ -1871,6 +1874,7 @@ button,
 @media (max-width: 1199px) {
   .about__video {
     width: 39.2330383481%;
+    height: auto;
     margin: -84px auto 0;
   }
 }
@@ -1879,6 +1883,12 @@ button,
     width: auto;
     margin: 40px 0 0;
   }
+}
+.about__video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about__video-player {
@@ -1902,7 +1912,6 @@ button,
 }
 @media (max-width: 1199px) {
   .video button {
-    top: 37%;
     width: 52px;
     height: 52px;
   }
@@ -2343,6 +2352,7 @@ button,
 }
 
 .card__btn {
+  width: 100%;
   color: #102654;
   padding: 25px 44px;
   border: 2px solid;
@@ -2419,7 +2429,6 @@ button,
 @media (max-width: 767px) {
   .event__top-content {
     margin: 0 auto 1px auto;
-    max-width: 100%;
   }
 }
 
@@ -2583,6 +2592,7 @@ button,
 @media (max-width: 767px) {
   .event__content-wrapper p {
     margin: 0 0 0 1px;
+    text-align: center;
   }
 }
 
@@ -4291,7 +4301,7 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 26px;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 35px;
   }
 }
@@ -4358,6 +4368,7 @@ button,
 @media (max-width: 767px) {
   .form-control__btn {
     padding: 18px 105px;
+    width: 100%;
   }
 }
 
