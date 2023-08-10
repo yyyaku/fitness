@@ -1701,7 +1701,9 @@ button,
   -ms-grid-row-span: 5;
   -ms-grid-column: 5;
   grid-area: image;
+  max-width: 500px;
   margin: 0 0 0 49px;
+  background-color: #1c3374;
 }
 
 @media (max-width: 767px) {
@@ -1855,11 +1857,16 @@ button,
   }
 }
 
+.about__photo {
+  background-color: #7e90b5;
+}
+
 .about__video {
   width: 55.1515151515%;
   height: 228px;
   margin: -113px 0 0 -63px;
   position: relative;
+  background-color: #7e90b5;
 }
 @media (max-width: 1199px) {
   .about__video {
@@ -2606,7 +2613,7 @@ button,
 .event__image-wrapper {
   width: 100%;
   min-height: 500px;
-  background-color: #000000;
+  background-color: #7e90b5;
 }
 @media (max-width: 1199px) {
   .event__image-wrapper {
@@ -2773,7 +2780,7 @@ button,
 .coaches__item {
   position: relative;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #1c3374;
   overflow: hidden;
   aspect-ratio: 260/294;
 }
