@@ -1,6 +1,7 @@
 .contacts {
   padding: 80px 120px 40px;
   background-color: #ffffff;
+  border-top: 1px solid #74819c;
 
   @include vp-1199 {
     padding: 75px 133px 42px;
@@ -43,9 +44,15 @@
 .contacts__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  @include vp-1199 {
+    gap: 30px;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 }
 
@@ -55,10 +62,24 @@
 }
 
 .contacts__item:nth-child(2n) {
-  padding-left: 70px;
+  position: relative;
+  padding-left: 60px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 1px;
+    height: 85%;
+    background-color: #74819c;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
 
   @include vp-1199 {
-    padding-left: 63px;
+    padding-left: 48px;
   }
 
   @include vp-767 {
@@ -87,5 +108,9 @@
     margin: 5px 0 20px;
     font-size: 18px;
     line-height: 27.4px;
+  }
+
+  @include vp-767 {
+    margin: 7px 0 18px;
   }
 }
