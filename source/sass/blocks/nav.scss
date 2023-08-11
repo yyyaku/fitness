@@ -41,13 +41,21 @@
     }
   }
 
-  &:focus {
+  &:focus-visible {
     border: 1px solid #ffffff;
     padding: 5px 10px;
     margin: -6px -11px;
 
     &::before {
       display: none;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    &::before {
+      outline: none;
     }
   }
 

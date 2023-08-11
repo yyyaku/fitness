@@ -13,4 +13,25 @@
   border-radius: 0;
   cursor: pointer;
   user-select: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #ffffff;
+    color: #103aae;
+    border-color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #ffffff;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }

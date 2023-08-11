@@ -93,6 +93,10 @@
     border: 1px solid #102654;
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &:active {
     color: #ffffff;
     background: $button-buy-gradient-hover;

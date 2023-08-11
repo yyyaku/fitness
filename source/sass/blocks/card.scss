@@ -12,7 +12,7 @@
   }
 
   @include vp-767 {
-    padding: 42px 0 45px;
+    padding: 42px 35px 45px;
   }
 
   &:hover,
@@ -116,8 +116,33 @@
 }
 
 .card__btn {
-  width: 100%;
   color: #102654;
   padding: 25px 44px;
   border: 2px solid;
+
+  &:hover,
+  &:focus-visible {
+    color: #ffffff;
+    background: $button-buy-gradient-hover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background: $button-buy-gradient-hover;
+    color: rgb(255, 255, 255, 0.7);
+    border: 2px solid transparent;
+  }
+
+  &:disabled {
+    background: #ffffff;
+    color: rgb(16, 38, 84, 0.3);
+    border: 2px solid rgb(16, 38, 84, 0.3);
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }

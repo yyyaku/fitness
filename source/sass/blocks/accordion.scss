@@ -28,6 +28,25 @@
       background-color: #ffffff;
       top: 50%;
     }
+
+    &:hover,
+    &:focus-visible {
+      &::before {
+        background-color: #102654;
+      }
+    }
+
+    &:focus {
+      &::before {
+        outline: none;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: #102654;
+      }
+    }
   }
 
   button {
@@ -37,6 +56,34 @@
 
     &::before {
       background-color: #ffffff;
+    }
+
+    &:hover,
+    &:focus-visible {
+      &::after {
+        background-color: #ffffff;
+      }
+
+      &::before {
+        background-color: #102654;
+      }
+    }
+
+    &:focus {
+      &::after,
+      &::before {
+        outline: none;
+      }
+    }
+
+    &:active {
+      &::after {
+        background-color: #ffffff;
+      }
+
+      &::before {
+        background-color: #ffffff;
+      }
     }
   }
 }
@@ -93,15 +140,15 @@
     }
   }
 
-  &:focus {
-    outline: none;
-  }
-
   &:hover,
   &:focus-visible {
     &::before {
       background-color: #102654;
     }
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {
@@ -113,6 +160,7 @@
   &:disabled {
     &::before {
       background-color: transparent;
+      border: 1px solid rgb(16, 38, 84, 0.3);
     }
   }
 }
@@ -157,7 +205,8 @@
     transform: rotate(180deg);
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     &::after,
     &::before {
       background-color: #ffffff;
@@ -169,10 +218,6 @@
     &::before {
       outline: none;
     }
-  }
-
-  &:focus-visible {
-    background-color: #ffffff;
   }
 
   &:active {

@@ -54,7 +54,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background: #ffffff;
 
     &::before {
@@ -65,6 +65,13 @@
 
     &::after {
       background: #000000;
+    }
+  }
+
+  &:focus {
+    &::before,
+    &::after {
+      outline: none;
     }
   }
 
