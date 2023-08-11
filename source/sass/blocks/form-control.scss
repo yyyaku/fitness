@@ -1,5 +1,7 @@
 .form-control__btn {
-  padding: 18px 165px;
+  width: 410px;
+  padding: 18px 0;
+  margin: 0 auto;
   background-color: transparent;
   font-size: 14px;
   font-weight: 700;
@@ -7,10 +9,13 @@
   text-transform: uppercase;
 
   @include vp-1199 {
-    padding: 21px 197px;
+    width: 472px;
+    padding: 21px 0;
   }
 
   @include vp-767 {
-    padding: 18px 105px;
+    padding: 18px 0;
+    max-width: 100%;
+    width: 100%;
   }
 }

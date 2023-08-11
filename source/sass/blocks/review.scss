@@ -5,7 +5,7 @@
   max-width: 680px;
 
   @include vp-1199 {
-    padding: 90px 0 100px;
+    padding: 88px 0 100px;
   }
 
   @include vp-767 {
@@ -131,7 +131,7 @@
 
 .reviews__button {
   position: absolute;
-  top: 55.5%;
+  top: 57%;
   width: 17px;
   height: 32px;
   border: none;
@@ -139,43 +139,90 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
-  &:disabled {
-    cursor: not-allowed;
-  }
-
   @include vp-1199 {
     top: 54%;
   }
 
   @include vp-767 {
+    top: 55%;
     width: 11px;
     height: 19px;
   }
 
   &--prev {
     left: 3px;
-    background-image: url("./../img/svg/button-prev.svg");
-
-    @include vp-1199 {
-      left: -1px;
-    }
-
-    @include vp-767 {
-      background-image: url("./../img/svg/button-prev-mobile.svg");
-    }
   }
 
   &--next {
-    right: 4px;
-    background-image: url("./../img/svg/button-next.svg");
+    right: 15px;
+  }
 
-    @include vp-1199 {
-      right: 0;
+  &:hover,
+  &:focus-visible {
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: -45%;
+      left: -40%;
+      width: 56px;
+      height: 56px;
+      padding: 0;
+      border: 1px solid #1c3374;
+      border-radius: 50%;
+
+      @include vp-767 {
+        top: -40%;
+        left: -20%;
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    &::before {
+      background: #102654;
     }
 
-    @include vp-767 {
-      right: -1px;
-      background-image: url("./../img/svg/button-next-mobile.svg");
+    .reviews__arrow {
+      border-color: #ffffff;
     }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    &::before {
+      border: none;
+    }
+  }
+}
+
+.reviews__arrow {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  &--prev {
+    border-top: 1px solid #102654;
+    border-right: 1px solid #102654;
+    transform: rotate(-135deg);
+  }
+
+  &--next {
+    border-top: 1px solid #102654;
+    border-right: 1px solid #102654;
+    transform: rotate(45deg);
+  }
+
+  @include vp-767 {
+    width: 15px;
+    height: 15px;
   }
 }

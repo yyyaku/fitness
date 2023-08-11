@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 10px 41px;
   padding: 0;
   list-style: none;
@@ -40,13 +41,21 @@
     }
   }
 
-  &:focus {
+  &:focus-visible {
     border: 1px solid #ffffff;
     padding: 5px 10px;
     margin: -6px -11px;
 
     &::before {
       display: none;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    &::before {
+      outline: none;
     }
   }
 

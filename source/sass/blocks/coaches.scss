@@ -193,64 +193,98 @@
 .coaches__button {
   position: absolute;
   top: 54%;
-  border: solid #102654;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 10px;
-  background-color: transparent;
-  cursor: pointer;
+  border: none;
+  background: none;
 
   @include vp-1199 {
     top: 51%;
   }
 
   @include vp-767 {
-    top: 54%;
+    top: 52%;
     padding: 5px;
   }
 
   &--prev {
     left: -57px;
-    transform: rotate(135deg);
 
     @include vp-1199 {
-      left: 3px;
+      left: 0;
     }
   }
 
   &--next {
     right: -55px;
-    transform: rotate(-45deg);
 
     @include vp-1199 {
-      right: 4px;
+      right: 0;
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     &::before {
       position: absolute;
       content: "";
       display: block;
-      top: -85%;
-      left: -15px;
+      top: -65%;
+      left: -40%;
       width: 56px;
       height: 56px;
       padding: 0;
       border: 1px solid #1c3374;
       border-radius: 50%;
+
+      @include vp-767 {
+        top: 30%;
+        left: -20%;
+        width: 35px;
+        height: 35px;
+      }
     }
   }
 
-  &:active {
-    border: solid #ffffff;
+  &:focus {
+    outline: none;
+  }
 
+  &:active {
     &::before {
-      background-color: #1c3374;
+      background: #102654;
+    }
+
+    .coaches__arrow {
+      border-color: #ffffff;
     }
   }
 
   &:disabled {
-    border: solid rgb(28, 51, 116, 0.3);
+    &::before {
+      border: none;
+    }
+  }
+}
+
+.coaches__arrow {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  &--prev {
+    border-top: 1px solid #102654;
+    border-right: 1px solid #102654;
+    transform: rotate(-135deg);
+  }
+
+  &--next {
+    border-top: 1px solid #102654;
+    border-right: 1px solid #102654;
+    transform: rotate(45deg);
+  }
+
+  @include vp-767 {
+    width: 15px;
+    height: 15px;
   }
 }

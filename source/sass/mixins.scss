@@ -92,6 +92,12 @@
   }
 }
 
+@mixin vp-340 {
+  @media (max-width: ($vp-341 - 1px)) {
+    @content;
+  }
+}
+
 // Mobile first
 
 // @mixin vp-375 {

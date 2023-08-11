@@ -19,6 +19,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
   font-weight: 600;
   font-size: 26px;
@@ -42,6 +43,7 @@
 
 .page-header__logo {
   margin-top: 10px;
+  cursor: pointer;
 
   @include vp-1199 {
     width: 82px;
@@ -76,6 +78,38 @@
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.34px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff;
+    }
+  }
+
+  &:focus-visible {
+    &::before {
+      display: none;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    &::before {
+      outline: none;
+    }
+  }
+
+  &:disabled {
+    padding: 0;
+    color: rgb(255, 255, 255, 0.4);
+    border: none;
   }
 }
 

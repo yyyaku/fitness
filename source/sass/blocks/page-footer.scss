@@ -28,6 +28,7 @@
   flex-shrink: 0;
   width: 86px;
   margin-top: 11px;
+  cursor: pointer;
 
   @include vp-1199 {
     width: 82px;
