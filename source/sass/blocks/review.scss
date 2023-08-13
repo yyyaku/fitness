@@ -157,26 +157,32 @@
     right: 15px;
   }
 
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -45%;
+    left: -75%;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    @include vp-767 {
+      top: -40%;
+      left: -20%;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
   &:hover,
   &:focus-visible {
-    &::before {
-      position: absolute;
-      content: "";
-      display: block;
-      top: -45%;
-      left: -40%;
-      width: 56px;
-      height: 56px;
-      padding: 0;
-      border: 1px solid #1c3374;
-      border-radius: 50%;
+    outline: none;
 
-      @include vp-767 {
-        top: -40%;
-        left: -20%;
-        width: 35px;
-        height: 35px;
-      }
+    &::before {
+      border: 1px solid #1c3374;
     }
   }
 
@@ -199,6 +205,11 @@
 
     &::before {
       border: none;
+      background-color: transparent;
+    }
+
+    .reviews__arrow {
+      border-color: rgb(16, 38, 84, 0.3);
     }
   }
 }

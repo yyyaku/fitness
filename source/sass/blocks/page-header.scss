@@ -34,7 +34,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 80px;
+    margin-bottom: 74px;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -42,74 +42,97 @@
 }
 
 .page-header__logo {
-  margin-top: 10px;
-  cursor: pointer;
+  margin: 5px 0 -5px -5px;
+  padding: 5px;
+  border: 1px solid transparent;
 
   @include vp-1199 {
-    width: 82px;
-    margin-top: 7px;
+    width: 92px;
+    margin: 1px 0 0 -6px;
   }
 
   @include vp-767 {
-    width: 69px;
-    margin-top: 5px;
+    width: 79px;
+    margin: -1px 0 0 -6px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    border: 1px solid #ffffff;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:disabled {
+    color: rgb(255, 255, 255, 0.4);
+    border: none;
+    cursor: default;
+  }
+}
+
+.page-header__info {
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__link {
   position: relative;
   display: inline-block;
-  margin-top: 5px;
+  padding: 5px;
+  margin: 0 -5px 0;
   font-family: $ff-alumni-sans;
   font-weight: 600;
   font-size: 26px;
   line-height: 20px;
   letter-spacing: 0.75px;
   color: $color-default-white;
+  border: 1px solid transparent;
 
   @include vp-1199 {
+    margin: -1px -5px 0;
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 0.48px;
   }
 
   @include vp-767 {
-    margin: 0;
+    margin: -5px -4px 0 0;
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.34px;
   }
 
-  &:hover,
-  &:focus-visible {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #ffffff;
-    }
+  &:hover {
+    opacity: 0.8;
   }
 
   &:focus-visible {
-    &::before {
-      display: none;
-    }
+    border: 1px solid #ffffff;
+    outline: none;
   }
 
   &:focus {
     outline: none;
+  }
 
-    &::before {
-      outline: none;
-    }
+  &:active {
+    opacity: 1;
   }
 
   &:disabled {
-    padding: 0;
     color: rgb(255, 255, 255, 0.4);
     border: none;
+    cursor: default;
   }
 }
 

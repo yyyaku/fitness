@@ -89,11 +89,12 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     border: 1px solid #102654;
+    outline: none;
   }
 
-  &:focus-visible {
+  &:focus {
     outline: none;
   }
 

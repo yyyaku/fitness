@@ -99,6 +99,9 @@
 }
 
 .contacts__item dd {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0 0 20px;
   font-size: 14px;
   font-weight: 400;

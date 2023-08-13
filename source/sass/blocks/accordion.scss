@@ -14,80 +14,6 @@
   }
 }
 
-.accordion__element.is-active {
-  padding: 32px 0 25px;
-  gap: 17px 0;
-
-  @include vp-767 {
-    padding: 21px 0;
-    gap: 12px 0;
-  }
-
-  .accordion__button {
-    &::before {
-      background-color: #ffffff;
-      top: 50%;
-    }
-
-    &:hover,
-    &:focus-visible {
-      &::before {
-        background-color: #102654;
-      }
-    }
-
-    &:focus {
-      &::before {
-        outline: none;
-      }
-    }
-
-    &:active {
-      &::before {
-        background-color: #102654;
-      }
-    }
-  }
-
-  button {
-    &::after {
-      background-color: #102654;
-    }
-
-    &::before {
-      background-color: #ffffff;
-    }
-
-    &:hover,
-    &:focus-visible {
-      &::after {
-        background-color: #ffffff;
-      }
-
-      &::before {
-        background-color: #102654;
-      }
-    }
-
-    &:focus {
-      &::after,
-      &::before {
-        outline: none;
-      }
-    }
-
-    &:active {
-      &::after {
-        background-color: #ffffff;
-      }
-
-      &::before {
-        background-color: #ffffff;
-      }
-    }
-  }
-}
-
 .accordion__element:first-child {
   &::after {
     position: absolute;
@@ -117,9 +43,21 @@
   background-color: rgba(28, 51, 116, 0.2);
 }
 
-.accordion__button {
-  display: flex;
+.accordion__element button {
   position: relative;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: center;
+  width: 42px;
+  padding: 0;
+  color: transparent;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include vp-767 {
+    width: 32px;
+  }
 
   &::before {
     content: "";
@@ -143,43 +81,62 @@
   &:hover,
   &:focus-visible {
     &::before {
-      background-color: #102654;
+      background-color: #1c3374;
+    }
+
+    .accordion__button {
+      &::before,
+      &::after {
+        background-color: #ffffff;
+      }
     }
   }
 
   &:focus {
-    outline: none;
+    &::before {
+      outline: none;
+    }
+
+    .accordion__button {
+      &::before,
+      &::after {
+        outline: none;
+      }
+    }
   }
 
   &:active {
     &::before {
-      background-color: #102654;
+      background-color: #1c3374;
+    }
+
+    .accordion__button {
+      &::before {
+        background-color: #1c3374;
+      }
+
+      &::after {
+        background-color: #ffffff;
+      }
     }
   }
 
   &:disabled {
     &::before {
       background-color: transparent;
-      border: 1px solid rgb(16, 38, 84, 0.3);
+      border: 1px solid rgb(28, 51, 116, 0.3);
+    }
+
+    &::before,
+    &::after {
+      background-color: 1px solid rgb(28, 51, 116, 0.3);
     }
   }
 }
 
-.accordion__button button {
+.accordion__button {
+  display: flex;
   position: relative;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  align-self: center;
-  width: 42px;
-  padding: 0;
-  color: transparent;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-
-  @include vp-767 {
-    width: 32px;
-  }
 
   &::before,
   &::after {
@@ -204,36 +161,46 @@
   &::after {
     transform: rotate(180deg);
   }
+}
 
-  &:hover,
-  &:focus-visible {
-    &::after,
-    &::before {
-      background-color: #ffffff;
-    }
+.accordion__element.is-active {
+  padding: 32px 0 25px;
+  gap: 17px 0;
+
+  @include vp-767 {
+    padding: 21px 0;
+    gap: 12px 0;
   }
 
-  &:focus {
-    &::after,
+  button {
     &::before {
-      outline: none;
-    }
-  }
-
-  &:active {
-    &::after {
-      background-color: #ffffff;
+      background-color: #1c3374;
     }
 
-    &::before {
-      background-color: #102654;
-    }
-  }
+    .accordion__button {
+      &::before {
+        background-color: #1c3374;
+      }
 
-  &:disabled {
-    &::after,
-    &::before {
-      background-color: rgb(16, 38, 84, 0.3);
+      &::after {
+        background-color: #ffffff;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: #1c3374;
+      }
+
+      .accordion__button {
+        &::before {
+          background-color: #ffffff;
+        }
+
+        &::after {
+          background-color: #ffffff;
+        }
+      }
     }
   }
 }
