@@ -9,13 +9,13 @@
     grid-template-columns: 1fr;
     gap: 45px;
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
     gap: 34px;
     padding-top: 63px;
-    padding-bottom: 10px;
+    padding-bottom: 70px;
   }
 }
 
