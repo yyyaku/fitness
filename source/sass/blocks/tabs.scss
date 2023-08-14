@@ -3,21 +3,8 @@
   background: #f8f9fc;
 }
 
-.tabs__wrapper {
-  margin: 0 auto;
-  max-width: 1160px;
-  padding: 120px 0;
-
-  @include vp-1199 {
-    padding: 153px 0 100px;
-  }
-
-  @include vp-767 {
-    padding: 110px 0 70px;
-  }
-}
-
-.tabs__wrapper h2 {
+.tabs h2 {
+  padding-top: 120px;
   margin: 0;
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -27,28 +14,52 @@
   text-align: center;
 
   @include vp-1199 {
+    padding-top: 90px;
     font-size: 42px;
     letter-spacing: 1.26px;
   }
 
   @include vp-767 {
+    padding-top: 50px;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
 }
 
+.tabs__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px 0;
+  padding-bottom: 120px;
+  margin: 0 auto;
+  max-width: 1160px;
+
+  @include vp-1199 {
+    gap: 0;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 70px;
+  }
+}
+
 .tabs__controls {
-  position: relative;
+  align-self: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto 39px auto;
+  gap: 0 46px;
+  margin: 0;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
   @include vp-1199 {
+    gap: 0 55px;
     margin-bottom: 45px;
   }
 
   @include vp-767 {
+    gap: 0 45px;
     margin-bottom: 35px;
   }
 }
@@ -56,7 +67,7 @@
 .tabs__controls button {
   position: relative;
   display: inline-block;
-  padding: 16px 24px;
+  padding: 16px 0;
   border: 0;
   color: rgba(16, 38, 84, 0.5);
   background-color: transparent;
@@ -66,44 +77,21 @@
   cursor: pointer;
 
   @include vp-1199 {
-    padding: 13px 28px;
+    padding: 13px 0;
     font-size: 18px;
     line-height: 27px;
   }
 
   @include vp-767 {
-    padding: 8px 15px 14px;
+    padding: 8px 0 14px;
     font-size: 16px;
     line-height: 24px;
-
-    &:nth-child(2n) {
-      padding: 8px 45px 14px;
-
-      &::before {
-        width: 50%;
-        left: 25%;
-      }
-    }
-
-    &:nth-child(2n+1) {
-      padding: 8px 0 14px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: rgba(120, 120, 120, 0.2);
   }
 
   &::before {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 2px;
