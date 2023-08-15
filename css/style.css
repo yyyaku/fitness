@@ -4913,7 +4913,8 @@ button,
 
   .accordion__button::before,
   .accordion__button::after {
-    left: 8px;
+    width: 12px;
+    left: 10px;
   }
 
   .accordion__element.is-active {
