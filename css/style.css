@@ -4788,7 +4788,7 @@ button,
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     margin: 6px 0;
-    padding: 35px 34px 33px;
+    padding: 35px 70px 33px;
     width: 100%;
     min-height: 239px;
   }
@@ -4802,7 +4802,7 @@ button,
   }
 
   .advantages__secondary h3 {
-    margin: 0 40px;
+    margin: 8px 0 11px;
   }
 
   .promo__wrapper {
