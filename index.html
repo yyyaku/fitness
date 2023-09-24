@@ -26,7 +26,7 @@
       <div class="page-header">
 
         <header class="page-header__container container">
-          <a class="logo page-header__logo" aria-current="page">
+          <a class="logo page-header__logo" aria-current="page" href="index.html">
             <span class="visually-hidden">На&nbsp;главную.</span>
             <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
           </a>
@@ -58,7 +58,7 @@
         </section>
       </div>
 
-      <section class="about container">
+      <section class="about container" id="about">
         <div class="about__content">
           <h2>Тренажерный зал</h2>
           <p>Просторный зал площадью 900 кв/м</p>
@@ -155,7 +155,7 @@
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <div class="card__price">
-                    <p data-parent="5000">5000</p>
+                    <p data-parent="5000">20000</p>
                     <svg width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -166,7 +166,7 @@
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00</p>
                   <div class="card__price">
-                    <p data-parent="1700">1700</p>
+                    <p data-parent="1700">8500</p>
                     <svg width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -177,7 +177,7 @@
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00</p>
                   <div class="card__price">
-                    <p data-parent="2700">2700</p>
+                    <p data-parent="2700">13500</p>
                     <svg width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -190,7 +190,7 @@
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <div class="card__price">
-                    <p data-parent="5000">5000</p>
+                    <p data-parent="5000">50000</p>
                     <svg width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -201,7 +201,7 @@
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00</p>
                   <div class="card__price">
-                    <p data-parent="1700">1700</p>
+                    <p data-parent="1700">17000</p>
                     <svg width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -212,7 +212,7 @@
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00</p>
                   <div class="card__price">
-                    <p data-parent="2700">2700</p>
+                    <p data-parent="2700">27000</p>
                     <svg width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -447,7 +447,7 @@
           <div class="advantages__wrapper">
             <h2>Наши преимущества</h2>
             <ul class="advantages__list">
-              <li class="advantages__primary">
+              <li class="advantages__item advantages__item--primary">
                 <div class="advantages__number">
                   <p>900</p>
                   <span>кв/м</span>
@@ -457,7 +457,7 @@
                   <p>Занимайтесь без очередей и&nbsp;толкучки</p>
                 </div>
               </li>
-              <li class="advantages__primary">
+              <li class="advantages__item advantages__item--primary">
                 <div class="advantages__number">
                   <p>70</p>
                   <span>машин</span>
@@ -467,12 +467,16 @@
                   <p>Вы всегда найдете место для своей&nbsp;машины на нашей парковке</p>
                 </div>
               </li>
-              <li class="advantages__secondary">
-                <p>100</p>
-                <span>Тренажеров</span>
-                <h3>Современные&nbsp;тренажеры на все группы мышц</h3>
+              <li class="advantages__item advantages__item--secondary">
+                <div class="advantages__number">
+                  <p>100</p>
+                  <span>Тренажеров</span>
+                </div>
+                <div class="advantages__text">
+                  <h3>Современные&nbsp;тренажеры на все группы мышц</h3>
+                </div>
               </li>
-              <li class="advantages__primary">
+              <li class="advantages__item advantages__item--primary">
                 <div class="advantages__number">
                   <p>350</p>
                   <span>мест</span>
@@ -482,7 +486,7 @@
                   <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </li>
-              <li class="advantages__primary">
+              <li class="advantages__item advantages__item--primary">
                 <div class="advantages__number">
                   <p>5+</p>
                   <span>лет</span>
@@ -497,7 +501,7 @@
         </div>
       </section>
 
-      <section class="promo container">
+      <section class="promo container" id="promo">
         <div class="promo__wrapper">
           <h2>Акции</h2>
           <ul>
@@ -863,34 +867,34 @@
 
       <footer class="page-footer">
         <div class="page-footer__inner container">
-          <a class="logo page-footer__logo" aria-current="page">
+          <a class="logo page-footer__logo" aria-current="page" href="index.html">
             <span class="visually-hidden">На главную.</span>
             <img src="img/svg/logo.svg" width="119" height="23" alt="Логотип SUPERGYM.">
           </a>
           <nav class="page-footer__nav-wrapper">
             <ul class="nav page-footer__nav">
               <li>
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#about">
                   Услуги
                 </a>
               </li>
               <li>
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#tabs">
                   Абонементы
                 </a>
               </li>
               <li>
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#promo">
                   Акции
                 </a>
               </li>
               <li>
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#coaches">
                   Тренеры
                 </a>
               </li>
               <li>
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="#tabs">
                   Расписание
                 </a>
               </li>
